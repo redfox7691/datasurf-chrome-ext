@@ -1,0 +1,99 @@
+/* styles.css
+   Stili per il widget filtro CER iniettato da Datasurf CER Filter extension.
+   Prefisso .dsext- per evitare collisioni con Angular Material / NG Zorro.
+   Design minimale, coerente con l'UI di Datasurf (colori neutri, bordi arrotondati).
+*/
+
+/* ─── Contenitore widget ──────────────────────────────────────────────────── */
+
+#dsext-filtro-cer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  margin: 6px 0 6px 0;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1;
+  /* Posizionamento: inline nell'header della card/toolbar */
+  flex-shrink: 0;
+}
+
+/* ─── Etichetta testo ─────────────────────────────────────────────────────── */
+
+.dsext-label {
+  color: #616161;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-right: 2px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* ─── Bottoni ─────────────────────────────────────────────────────────────── */
+
+.dsext-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #424242;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  /* Rimuove stili browser predefiniti */
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.dsext-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #9e9e9e;
+  color: #212121;
+}
+
+.dsext-btn:focus-visible {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+/* Stato attivo: bottone selezionato correntemente */
+.dsext-btn--attivo {
+  background-color: #1976d2;
+  border-color: #1565c0;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.dsext-btn--attivo:hover {
+  background-color: #1565c0;
+  border-color: #0d47a1;
+  color: #ffffff;
+}
+
+/* ─── Variante: riga nascosta dal filtro ──────────────────────────────────── */
+
+/* Aggiunta per chiarezza semantica, ma il filtro usa style.display direttamente */
+tr.dsext-nascosta {
+  display: none !important;
+}
+
+/* ─── Responsive: su schermi piccoli il widget va in colonna ─────────────── */
+
+@media (max-width: 600px) {
+  #dsext-filtro-cer {
+    flex-wrap: wrap;
+  }
+}
