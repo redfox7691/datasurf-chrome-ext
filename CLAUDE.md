@@ -34,71 +34,58 @@ Non esistono test automatici né linter configurati.
 
 ### Come funziona Datasurf (target)
 
-- SPA Angular (versione da determinare; verificare con `ng.version` in DevTools console)
+- SPA Angular con Zone.js. Rotta frontend: `https://app.datasurf.it/apps/rifiuti/products`
 - Tutto il rendering è JS-side; il server non invia HTML precompilato
 - Lista rifiuti paginata server-side: 10 record/pagina, ~44 pagine (~439 record totali)
-- Endpoint: `GET https://app.datasurf.it/apps/rifiuti/products` con parametri di paginazione
 
-Campi rilevanti per ogni record in `data[]`:
+**API reale** (scoperta da analisi HAR): `POST https://v2.srvrhive.com/api/service/anagrafica/articoli/`  
+Non è l'URL della SPA — è un endpoint separato sul backend `v2.srvrhive.com`.
+
+Struttura risposta:
 ```json
 {
-  "codice": "030104",
-  "sku": "040222_CAMPIONARI",
-  "codice_famiglia": "030104",
-  "descrizione": "...",
-  "annullato": 0
+  "res": true,
+  "records": 439,
+  "data": [
+    {
+      "id": "1182",
+      "codice": "020104",
+      "codice_famiglia": "020104",
+      "sku": "020104",
+      "descrizione": "rifiuti plastici (ad esclusione degli imballaggi)",
+      "annullato": 0
+    }
+  ]
 }
 ```
 
+Gli articoli senza codice CER (es. attrezzature, arredi) hanno `codice_famiglia: null` e `codice` non numerico. Vanno nascosti nei filtri Pericolosi/Non pericolosi e mostrati solo con "Tutti".
+
 Datasurf normalizza i codici CER **rimuovendo l'asterisco**. La pericolosità non è un campo JSON: va determinata tramite lookup table.
 
-### Vincolo critico: main world injection
+### Vincolo critico: main world + intercettazione XHR
 
-Il content script deve girare nel **main world** (non nell'isolated world predefinito di MV3), perché Angular usa il `fetch` del `window` originale. Configurazione necessaria nel manifest:
+Il content script deve girare nel **main world** (`"world": "MAIN"`, `"run_at": "document_start"`).
 
-```json
-"content_scripts": [{
-  "world": "MAIN",
-  "run_at": "document_start",
-  "js": ["pericolosi_cer.js", "content_script.js"]
-}]
-```
+**Angular usa `XMLHttpRequest` tramite Zone.js, non `fetch`.**  
+Il kernel intercetta entrambi (`window.fetch` e `XMLHttpRequest.prototype`), ma in pratica solo XHR viene usato. Il patch XHR deve avvenire prima che Zone.js carichi (garantito da `document_start`): Zone.js salva la nostra versione patchata come "originale" e la chiama regolarmente.
 
-`run_at: document_start` è obbligatorio per fare l'override di `window.fetch` prima che Angular lo chiami.
-
-### Pattern intercettazione fetch
-
-```javascript
-const _fetch = window.fetch;
-window.fetch = async function(...args) {
-  const response = await _fetch.apply(this, args);
-  const url = typeof args[0] === 'string' ? args[0] : args[0].url;
-  if (url.includes('/apps/rifiuti/products')) {
-    response.clone().json().then(data => {
-      window.__cerData = data;
-      applyCurrentFilter();
-    });
-  }
-  return response; // restituisce la risposta originale intatta ad Angular
-};
-```
-
-La risposta NON va mai modificata prima di restituirla ad Angular (requisito non funzionale).
+Il listener delle feature si registra con pattern sull'URL API (es. `'anagrafica/articoli'`), non sull'URL della SPA.
 
 ### Iniezione widget nel DOM
 
-Angular aggiorna il DOM in modo asincrono: usare `MutationObserver` per aspettare che la toolbar della lista sia renderizzata, poi iniettare il selettore una sola volta (controllare se già presente per idempotenza).
+Angular aggiorna il DOM in modo asincrono: `MutationObserver` aspetta che la toolbar sia renderizzata, poi inietta il widget una sola volta (idempotente). Il selettore toolbar è empirico (`nz-card-head, .mat-card-header, ...`): verificare in DevTools se cambia con aggiornamenti di Datasurf.
 
 ### Logica pericolosità
 
 ```javascript
-const codiceBase = record.codice_famiglia || record.codice.split('_')[0];
+const codiceBase = (record.codice_famiglia || record.codice || '').split('_')[0].trim();
 const isPericoloso = CER_PERICOLOSI.has(codiceBase);
 ```
 
 ### Caveat: virtual scroll Angular
 
-Se Datasurf usa virtual scroll (solo N righe nel DOM), il filtro DOM diretto non funziona. In quel caso bisogna restituire una `Response` modificata (filtrata) al posto dell'originale — cambia il pattern fetch sopra. Verificare aprendo DevTools → Elements e scorrendo la lista.
+Se Datasurf usa virtual scroll (solo N righe nel DOM), il filtro DOM diretto non funziona. Attivare con `window.__cerVirtualScroll = true` in Console: la strategia passa a filtro sull'array JSON + tentativo di re-render forzato.
 
 ### Lookup table CER pericolosi (`pericolosi_cer.js`)
 
