@@ -1,30 +1,43 @@
 #!/bin/bash
-# Genera il pacchetto di distribuzione per Datasurf CER Filter.
+# Genera il pacchetto di distribuzione per l'estensione Datasurf per IoRecupero.
 # Produce uno zip con tutti i file dell'estensione + LEGGIMI.txt.
 # Uso: ./pack.sh
 
 set -e
 
 VERSIONE=$(python3 -c "import json; print(json.load(open('manifest.json'))['version'])")
-NOME="datasurf-cer-filter-v${VERSIONE}"
+NOME="datasurf-iorecupero-v${VERSIONE}"
 TMPDIR=$(mktemp -d)
 DEST="${TMPDIR}/${NOME}"
 
 mkdir -p "${DEST}/features" "${DEST}/icons"
 
 # File dell'estensione
-cp manifest.json content_script.js pericolosi_cer.js styles.css "${DEST}/"
-cp features/cer_filter.js "${DEST}/features/"
+cp manifest.json content_script.js pericolosi_cer.js catalogo_cer.js styles.css "${DEST}/"
+cp features/cer_filter.js features/soggetti_lookup.js "${DEST}/features/"
 cp icons/icon16.png icons/icon48.png icons/icon128.png "${DEST}/icons/"
 
 # Istruzioni installazione
 cat > "${DEST}/LEGGIMI.txt" << 'EOF'
-=======================================================
-  Datasurf CER Filter — Estensione Chrome per IoRecupero
-=======================================================
+================================================================
+  Datasurf — Estensione Chrome per IoRecupero
+================================================================
 
-Questa estensione aggiunge il filtro "Pericoloso / Non Pericoloso / Tutti"
-all'anagrafica rifiuti di Datasurf.
+Estensione che migliora l'interfaccia di Datasurf per le esigenze
+operative di Io Recupero SRL.
+
+FUNZIONALITÀ
+------------
+1. ANAGRAFICA RIFIUTI (pagina Rifiuti/Prodotti)
+   - Filtro rapido: [Tutti] [Pericolosi] [Non pericolosi]
+   - Card "Consulta CER": digita un codice CER/EER e ottieni
+     descrizione ufficiale e classificazione di pericolosità.
+
+2. ANAGRAFICHE SOGGETTI (pagina Soggetti/Clienti/Fornitori)
+   - Card "Consulta Soggetto": cerca per ragione sociale, P.IVA,
+     codice fiscale, telefono o email tra i soggetti già caricati
+     da Datasurf. L'indice si aggiorna in automatico durante la
+     navigazione.
 
 REQUISITI
 ---------
@@ -33,7 +46,7 @@ REQUISITI
 INSTALLAZIONE (da fare una sola volta)
 ---------------------------------------
 1. Estrarre questo file zip in una cartella sul proprio PC.
-   Esempio: C:\Utenti\Mario\datasurf-cer-filter\
+   Esempio: C:\Utenti\Mario\datasurf-iorecupero\
 
 2. Aprire Google Chrome e digitare nella barra degli indirizzi:
      chrome://extensions
@@ -46,17 +59,6 @@ INSTALLAZIONE (da fare una sola volta)
 
 6. L'estensione è installata. Comparirà il nome "Datasurf CER Filter"
    nell'elenco delle estensioni.
-
-UTILIZZO
---------
-1. Aprire Datasurf e andare su:
-     Anagrafica → Rifiuti (o il menu prodotti/rifiuti)
-
-2. Nella testata della lista comparirà il widget:
-     Filtro CER: [Tutti] [Pericolosi] [Non pericolosi]
-
-3. Cliccare il filtro desiderato. Il filtro si applica alla pagina corrente;
-   cambiando pagina si riapplica automaticamente.
 
 AGGIORNAMENTO
 -------------

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Datasurf CER Filter",
-  "version": "1.1.2",
-  "description": "Filtro e consultazione rapida CER/EER pericoloso/non pericoloso, con catalogo ricontrollato.",
+  "version": "1.2.0",
+  "description": "Filtro CER, consultazione rapida codici e ricerca soggetti per IoRecupero.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -17,6 +17,7 @@
         "pericolosi_cer.js",
         "catalogo_cer.js",
         "features/cer_filter.js",
+        "features/soggetti_lookup.js",
         "content_script.js"
       ],
       "css": [

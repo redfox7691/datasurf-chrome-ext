@@ -43,15 +43,7 @@ const kernel = (() => {
     if (fetchListeners.length > 0) {
       const clone = response.clone();
       clone.json().then(data => {
-        fetchListeners.forEach(listener => {
-          if (_urlMatchaPattern(url, listener.pattern)) {
-            try {
-              listener.callback(url, data);
-            } catch (err) {
-              console.warn('[dsext] errore in fetch listener:', err);
-            }
-          }
-        });
+        _notificaListeners(url, data);
       }).catch(() => {
         // Ignora le risposte non-JSON (es. risorse statiche)
       });
@@ -59,6 +51,14 @@ const kernel = (() => {
 
     return response; // risposta originale intatta per Angular
   };
+
+  function _notificaListeners(url, data) {
+    fetchListeners.slice().forEach(listener => {
+      if (!_urlMatchaPattern(url, listener.pattern)) return;
+      try { listener.callback(url, data); }
+      catch (err) { console.warn('[dsext] errore in fetch listener:', err); }
+    });
+  }
 
 
   // ─── XHR interceptor ─────────────────────────────────────────────────────────
@@ -79,17 +79,7 @@ const kernel = (() => {
     if (this._dsextUrl && fetchListeners.length > 0) {
       const url = this._dsextUrl;
       this.addEventListener('load', function () {
-        if (!fetchListeners.some(l => _urlMatchaPattern(url, l.pattern))) return;
-        try {
-          const data = JSON.parse(this.responseText);
-          fetchListeners.forEach(l => {
-            if (_urlMatchaPattern(url, l.pattern)) {
-              try { l.callback(url, data); } catch (e) { console.warn('[dsext] errore listener XHR:', e); }
-            }
-          });
-        } catch (_) {
-          // risposta non JSON, ignora
-        }
+        try { _notificaListeners(url, JSON.parse(this.responseText)); } catch (_) {}
       });
     }
     return _XHRSend.apply(this, arguments);
@@ -105,8 +95,8 @@ const kernel = (() => {
     const originale = history[nomeMetodo];
     history[nomeMetodo] = function (...args) {
       const risultato = originale.apply(this, args);
-      // Dopo la chiamata originale, location.pathname è già aggiornato
-      _gestisciCambioRotta();
+      // setTimeout evita di chiamare durante la transizione di navigazione
+      setTimeout(_gestisciCambioRotta, 0);
       return risultato;
     };
   }
@@ -114,7 +104,7 @@ const kernel = (() => {
   _patchHistoryMethod('pushState');
   _patchHistoryMethod('replaceState');
 
-  window.addEventListener('popstate', () => _gestisciCambioRotta());
+  window.addEventListener('popstate', () => setTimeout(_gestisciCambioRotta, 0));
 
   function _gestisciCambioRotta() {
     const percorsoCorrente = location.pathname;
@@ -157,7 +147,7 @@ const kernel = (() => {
   // Restituisce una funzione stop() per interrompere l'osservazione manualmente.
   function waitForElement(selettore, callback, opzioni) {
     const opts = opzioni || {};
-    const persistente = opts.persistente === true;
+    const persistente = opts.persistente === true || opts.persistent === true;
 
     // Controlla subito se l'elemento è già nel DOM
     const elementoPresente = document.querySelector(selettore);
@@ -242,7 +232,7 @@ const kernel = (() => {
   // così le feature possono usare waitForElement senza problemi.
   // (document_start: DOM non ancora pronto → usiamo DOMContentLoaded)
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', _gestisciCambioRotta);
+    document.addEventListener('DOMContentLoaded', _gestisciCambioRotta, { once: true });
   } else {
     _gestisciCambioRotta();
   }
