@@ -1,24 +1,33 @@
 #!/bin/bash
-# Genera il pacchetto di distribuzione per l'estensione Datasurf per IoRecupero.
-# Produce uno zip con tutti i file dell'estensione + LEGGIMI.txt.
-# Uso: ./pack.sh
+# Genera i pacchetti di distribuzione per l'estensione Datasurf per IoRecupero.
+#
+# Uso:
+#   ./pack.sh            → zip per distribuzione manuale (con LEGGIMI.txt, in sottocartella)
+#   ./pack.sh --webstore → zip per Chrome Web Store (file alla radice, senza LEGGIMI.txt)
+#   ./pack.sh --tutti    → genera entrambi
 
 set -e
 
 VERSIONE=$(python3 -c "import json; print(json.load(open('manifest.json'))['version'])")
-NOME="datasurf-iorecupero-v${VERSIONE}"
-TMPDIR=$(mktemp -d)
-DEST="${TMPDIR}/${NOME}"
+MODALITA="${1:---manuale}"
 
-mkdir -p "${DEST}/features" "${DEST}/icons"
+_copia_file_estensione() {
+  local dest="$1"
+  mkdir -p "${dest}/features" "${dest}/icons"
+  cp manifest.json content_script.js pericolosi_cer.js catalogo_cer.js styles.css "${dest}/"
+  cp features/cer_filter.js features/soggetti_lookup.js "${dest}/features/"
+  cp icons/icon16.png icons/icon48.png icons/icon128.png "${dest}/icons/"
+}
 
-# File dell'estensione
-cp manifest.json content_script.js pericolosi_cer.js catalogo_cer.js styles.css "${DEST}/"
-cp features/cer_filter.js features/soggetti_lookup.js "${DEST}/features/"
-cp icons/icon16.png icons/icon48.png icons/icon128.png "${DEST}/icons/"
+_pack_manuale() {
+  local NOME="datasurf-iorecupero-v${VERSIONE}"
+  local TMPDIR
+  TMPDIR=$(mktemp -d)
+  local DEST="${TMPDIR}/${NOME}"
 
-# Istruzioni installazione
-cat > "${DEST}/LEGGIMI.txt" << 'EOF'
+  _copia_file_estensione "${DEST}"
+
+  cat > "${DEST}/LEGGIMI.txt" << 'EOF'
 ================================================================
   Datasurf — Estensione Chrome per IoRecupero
 ================================================================
@@ -76,12 +85,33 @@ PROBLEMI
 Contattare: claudio.bizzarri@gmail.com
 EOF
 
-# Zip
-cd "${TMPDIR}"
-zip -r "${NOME}.zip" "${NOME}" -x "*.DS_Store" > /dev/null
-cd - > /dev/null
+  cd "${TMPDIR}"
+  zip -r "${NOME}.zip" "${NOME}" -x "*.DS_Store" > /dev/null
+  cd - > /dev/null
+  mv "${TMPDIR}/${NOME}.zip" .
+  rm -rf "${TMPDIR}"
+  echo "Pacchetto manuale:   ${NOME}.zip"
+}
 
-mv "${TMPDIR}/${NOME}.zip" .
-rm -rf "${TMPDIR}"
+_pack_webstore() {
+  local NOME="datasurf-webstore-v${VERSIONE}"
+  local TMPDIR
+  TMPDIR=$(mktemp -d)
+  local DEST="${TMPDIR}/ext"
 
-echo "Pacchetto creato: ${NOME}.zip"
+  _copia_file_estensione "${DEST}"
+
+  # Lo zip per il Web Store deve avere i file alla radice (niente sottocartella)
+  cd "${DEST}"
+  zip -r "${NOME}.zip" . -x "*.DS_Store" > /dev/null
+  cd - > /dev/null
+  mv "${DEST}/${NOME}.zip" .
+  rm -rf "${TMPDIR}"
+  echo "Pacchetto Web Store: ${NOME}.zip"
+}
+
+case "${MODALITA}" in
+  --webstore) _pack_webstore ;;
+  --tutti)    _pack_manuale; _pack_webstore ;;
+  *)          _pack_manuale ;;
+esac
