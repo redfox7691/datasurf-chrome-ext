@@ -4,17 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ---
 
-# Progetto: Datasurf CER Filter — Chrome Extension
+# Progetto: Estensione Chrome Datasurf per IoRecupero
 
-Estensione Chrome per aggiungere un filtro **Pericoloso / Non Pericoloso / Tutti** all'anagrafica rifiuti di Datasurf (`https://app.datasurf.it/apps/rifiuti/products`), senza toccare il codice di Datasurf.
+Estensione Chrome che modifica l'interfaccia di Datasurf (`https://app.datasurf.it`) per venire incontro alle esigenze operative di **Io Recupero SRL**, senza toccare il codice di Datasurf.
 
-Cliente: **IoRecupero (Massimo Grillini)**. Datasurf è un SaaS di terze parti (Digibit) senza accesso al sorgente. L'estensione è un applicativo verticale di proprietà di IoRecupero.
+Datasurf è un SaaS di terze parti (Digibit) senza accesso al sorgente. L'estensione è un applicativo verticale di proprietà di IoRecupero, sviluppato da Claudio Bizzarri con contributi di Massimo Grillini.
 
 ## Stack
 
 - Chrome Extension **Manifest V3** (MV3)
 - Vanilla JS, nessun framework, nessun bundler, nessun npm
-- Distribuzione: `.crx` firmato o modalità sviluppatore (no Chrome Web Store)
+- Distribuzione: zip in modalità sviluppatore (no Chrome Web Store)
 
 ## Sviluppo e distribuzione
 
@@ -24,24 +24,63 @@ Nessun build step. Il codice viene caricato direttamente in Chrome:
 chrome://extensions → Modalità sviluppatore ON → "Carica estensione non pacchettizzata" → seleziona la directory
 ```
 
-Dopo ogni modifica ai file JS/CSS: tasto **Ricarica** sull'estensione in `chrome://extensions`, poi ricaricare la pagina Datasurf.
+Dopo ogni modifica: **Ricarica** l'estensione in `chrome://extensions`, poi ricaricare la pagina Datasurf.
 
-Per distribuire: `chrome://extensions → Pacchetta estensione` → genera `.crx` + chiave privata `.pem` (conservare la chiave per aggiornamenti futuri).
+Per generare il pacchetto zip da distribuire agli utenti: `./pack.sh`
 
 Non esistono test automatici né linter configurati.
 
-## Architettura
+## Versionamento
+
+Schema `MAJOR.MINOR.PATCH` in `manifest.json`:
+- **PATCH** (es. 1.2.1): bug fix
+- **MINOR** (es. 1.3.0): nuova feature o miglioramento visibile
+- **MAJOR**: redesign architetturale
+
+Aggiornare sempre la versione in `manifest.json` prima di distribuire o fare commit finale.
+
+## Architettura: kernel + feature modules
+
+L'estensione usa un pattern **kernel + moduli feature**. Il kernel gestisce infrastruttura condivisa; ogni pagina di Datasurf ha il proprio modulo feature.
+
+```
+content_script.js          ← kernel (SPA router, XHR/fetch interceptor, MutationObserver helper)
+pericolosi_cer.js          ← lookup table CER pericolosi (Set, ~408 codici)
+catalogo_cer.js            ← catalogo CER completo (Map, 842 codici con descrizioni)
+features/
+  cer_filter.js            ← feature: filtro + card consulta CER (/apps/rifiuti/products)
+  soggetti_lookup.js       ← feature: card consulta soggetti (/apps/soggetti/*)
+styles.css                 ← tutti gli stili (prefissi dsext-* e dssogg-*)
+```
+
+### Aggiungere una nuova feature
+
+1. Creare `features/nuova_feature.js` seguendo il pattern di `cer_filter.js`
+2. Aggiungere il file in `manifest.json` prima di `content_script.js`
+3. La feature si registra su `window.__dsextPendingRegistrations` con `{ urlPattern, mount, unmount }`
+4. Aggiungere gli stili in `styles.css` con prefisso CSS univoco (es. `dsnuova-`)
+5. Aggiornare `pack.sh` per includere il nuovo file
+
+### API del kernel (disponibile come globale `kernel`)
+
+```javascript
+kernel.registerFeature({ urlPattern, mount, unmount })  // urlPattern: stringa o RegExp
+kernel.onFetch(urlPattern, callback)   // → id; callback(url, data) su ogni XHR/fetch JSON
+kernel.offFetch(id)                    // deregistra listener
+kernel.waitForElement(selector, callback, { persistente: false })  // → stopFn
+```
 
 ### Come funziona Datasurf (target)
 
-- SPA Angular con Zone.js. Rotta frontend: `https://app.datasurf.it/apps/rifiuti/products`
-- Tutto il rendering è JS-side; il server non invia HTML precompilato
-- Lista rifiuti paginata server-side: 10 record/pagina, ~44 pagine (~439 record totali)
+- SPA Angular con Zone.js
+- **Angular usa `XMLHttpRequest` tramite Zone.js, non `fetch`** — il kernel intercetta entrambi ma in pratica solo XHR viene usato
+- Il patch XHR avviene a `document_start`, prima che Zone.js carichi: Zone.js salva la nostra versione come "originale"
+- I listener fetch si registrano sull'URL API (`v2.srvrhive.com`), non sull'URL della SPA
 
-**API reale** (scoperta da analisi HAR): `POST https://v2.srvrhive.com/api/service/anagrafica/articoli/`  
-Non è l'URL della SPA — è un endpoint separato sul backend `v2.srvrhive.com`.
+**API rifiuti** (verificata da analisi HAR):
+`POST https://v2.srvrhive.com/api/service/anagrafica/articoli/`
 
-Struttura risposta:
+Struttura risposta lista rifiuti:
 ```json
 {
   "res": true,
@@ -59,24 +98,39 @@ Struttura risposta:
 }
 ```
 
-Gli articoli senza codice CER (es. attrezzature, arredi) hanno `codice_famiglia: null` e `codice` non numerico. Vanno nascosti nei filtri Pericolosi/Non pericolosi e mostrati solo con "Tutti".
+Articoli senza CER (es. arredi) hanno `codice_famiglia: null`. Vanno nascosti nei filtri Pericolosi/Non pericolosi.
 
-Datasurf normalizza i codici CER **rimuovendo l'asterisco**. La pericolosità non è un campo JSON: va determinata tramite lookup table.
+Datasurf normalizza i codici CER **rimuovendo l'asterisco**. La pericolosità non è un campo JSON: va determinata via `CER_PERICOLOSI`.
 
-### Vincolo critico: main world + intercettazione XHR
+### Pattern standard di iniezione widget nel DOM
 
-Il content script deve girare nel **main world** (`"world": "MAIN"`, `"run_at": "document_start"`).
+Angular aggiorna il DOM in modo asincrono: usare `kernel.waitForElement` per aspettare l'elemento, poi iniettare il widget una sola volta (idempotente).
 
-**Angular usa `XMLHttpRequest` tramite Zone.js, non `fetch`.**  
-Il kernel intercetta entrambi (`window.fetch` e `XMLHttpRequest.prototype`), ma in pratica solo XHR viene usato. Il patch XHR deve avvenire prima che Zone.js carichi (garantito da `document_start`): Zone.js salva la nostra versione patchata come "originale" e la chiama regolarmente.
+**Selettori da usare** (in ordine di preferenza, dal più specifico):
+```javascript
+const selettore = [
+  'nz-card-head',
+  '.mat-card-header',
+  '[class*="page-header"]',
+  'nz-table',
+  'table',
+].join(', ');
+```
 
-Il listener delle feature si registra con pattern sull'URL API (es. `'anagrafica/articoli'`), non sull'URL della SPA.
+**Non usare mai** `main`, `body`, `[class*="content"]`, `[class*="page"]` come selettori di iniezione: sono troppo generici e matchano componenti di navigazione Angular (la barra blu fissa), causando l'iniezione nel nav invece che nel contenuto.
 
-### Iniezione widget nel DOM
+**Logica del contenitore** (uguale per tutte le feature):
+```javascript
+const contenitore = elementoTarget.closest('nz-card, mat-card, .card, [class*="toolbar"], .list-header')
+                 || elementoTarget.parentElement;
+if (contenitore) {
+  contenitore.insertBefore(widget, contenitore.firstChild);
+} else {
+  elementoTarget.parentElement.insertBefore(widget, elementoTarget);
+}
+```
 
-Angular aggiorna il DOM in modo asincrono: `MutationObserver` aspetta che la toolbar sia renderizzata, poi inietta il widget una sola volta (idempotente). Il selettore toolbar è empirico (`nz-card-head, .mat-card-header, ...`): verificare in DevTools se cambia con aggiornamenti di Datasurf.
-
-### Logica pericolosità
+### Logica pericolosità CER
 
 ```javascript
 const codiceBase = (record.codice_famiglia || record.codice || '').split('_')[0].trim();
@@ -85,13 +139,11 @@ const isPericoloso = CER_PERICOLOSI.has(codiceBase);
 
 ### Caveat: virtual scroll Angular
 
-Se Datasurf usa virtual scroll (solo N righe nel DOM), il filtro DOM diretto non funziona. Attivare con `window.__cerVirtualScroll = true` in Console: la strategia passa a filtro sull'array JSON + tentativo di re-render forzato.
+Se Datasurf usa virtual scroll (solo N righe nel DOM), il filtro DOM diretto non funziona. Attivare con `window.__cerVirtualScroll = true` in Console per passare alla strategia JSON.
 
-### Lookup table CER pericolosi (`pericolosi_cer.js`)
+### Lookup table CER (`pericolosi_cer.js`, `catalogo_cer.js`)
 
-`Set` globale con tutti i codici CER pericolosi (CER 2002, D.Lgs. 152/2006 All. D Parte IV), senza asterisco, per matchare il formato Datasurf. La lista è normativa e stabile (~400 codici). Va popolata completamente prima del deploy.
-
-Non usare `chrome.storage` per questa lookup table: è statica, va nel JS bundlato.
+Dati normativi stabili (Decisione 2014/955/UE). Modificare solo in caso di aggiornamenti legislativi, documentando la modifica in `VERIFICA_CATALOGO_CER.txt`. Non usare `chrome.storage`: sono variabili globali nel JS bundlato.
 
 ## Requisiti non funzionali
 
