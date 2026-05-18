@@ -242,7 +242,7 @@ tr.dsext-nascosta {
   gap: 7px;
   max-width: 680px;
   padding: 10px;
-  margin: 72px 0 6px 0; /* margine superiore per non finire sotto la barra fissa di Datasurf */
+  margin: 6px 0;
   background: #fafafa;
   border: 1px solid #e0e0e0;
   border-radius: 6px;

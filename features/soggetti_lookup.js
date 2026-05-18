@@ -333,9 +333,15 @@
       input.value = ''; lastInput = ''; renderResults(); input.focus();
     });
 
-    const container = target.closest('nz-card, mat-card, .card, [class*="content"], [class*="page"], main') || target.parentElement || document.body;
-    if (container.firstChild) container.insertBefore(widget, container.firstChild);
-    else container.appendChild(widget);
+    // Stessa logica del CER filter: risale al contenitore card/toolbar,
+    // non usa mai body o elementi generici che potrebbero essere nel nav.
+    const contenitore = target.closest('nz-card, mat-card, .card, [class*="toolbar"], .list-header')
+                     || target.parentElement;
+    if (contenitore) {
+      contenitore.insertBefore(widget, contenitore.firstChild);
+    } else {
+      target.parentElement.insertBefore(widget, target);
+    }
 
     updateStatus();
   }
@@ -406,9 +412,9 @@
       processData(url, data);
     });
 
-    // 'body' escluso: iniettare come primo figlio di body mette la card
-    // sopra la barra fissa di Datasurf e la rende inaccessibile.
-    const selettore = ['nz-card-head', '.mat-card-header', '[class*="page-header"]', '[class*="content"]', 'nz-table', 'table', 'main'].join(', ');
+    // Stessi selettori del CER filter: elementi specifici del contenuto,
+    // mai 'main', 'body' o classi generiche che matchano il nav Angular.
+    const selettore = ['nz-card-head', '.mat-card-header', '[class*="page-header"]', 'nz-table', 'table'].join(', ');
     stopObserver = kernel.waitForElement(selettore, el => {
       mountWidget(el);
       scanDomRows();
