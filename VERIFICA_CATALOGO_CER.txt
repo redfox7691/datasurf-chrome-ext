@@ -1,0 +1,19 @@
+VERIFICA CATALOGO CER/EER - VERSIONE 1.1.2
+
+Codici catalogo univoci: 842
+Codici pericolosi true: 408
+Codici non pericolosi false: 434
+Mismatch tra catalogo_cer.js e CER_PERICOLOSI: 0
+030104: PERICOLOSO = true
+
+Correzioni principali rispetto alla v1.1.0:
+- 030104: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 100104: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 100118: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 100321: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 101109: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 101113: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 160209: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 161103: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 190811: forzato a PERICOLOSO=true e descrizione non vuota/corretta
+- 191305: forzato a PERICOLOSO=true e descrizione non vuota/corretta

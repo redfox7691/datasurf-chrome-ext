@@ -47,6 +47,74 @@ function _isPericoloso(record) {
   return CER_PERICOLOSI.has(codiceBase);
 }
 
+function _normalizzaCerInput(valore) {
+  // Accetta formati come "15 02 03", "150203", "150203_EXTRA", "15.02.03".
+  const testo = String(valore || '').trim();
+  const primaParte = testo.split('_')[0];
+  const soloCifre = primaParte.replace(/\D/g, '').slice(0, 6);
+  return soloCifre.length === 6 ? soloCifre : null;
+}
+
+function _formattaCer(codice) {
+  return `${codice.slice(0, 2)} ${codice.slice(2, 4)} ${codice.slice(4, 6)}`;
+}
+
+function _consultaCer(codiceNormalizzato) {
+  if (!codiceNormalizzato) return null;
+  const voce = (typeof CER_CATALOGO !== 'undefined') ? CER_CATALOGO.get(codiceNormalizzato) : null;
+  if (!voce) return { codice: codiceNormalizzato, trovato: false };
+  return {
+    codice: codiceNormalizzato,
+    trovato: true,
+    descrizione: voce.descrizione,
+    // Fonte unica della pericolosita': CER_PERICOLOSI. Il campo nel catalogo e' solo ridondante.
+    pericoloso: (typeof CER_PERICOLOSI !== 'undefined') ? CER_PERICOLOSI.has(codiceNormalizzato) : Boolean(voce.pericoloso),
+  };
+}
+
+function _aggiornaRispostaCer(input, resultBox) {
+  const codice = _normalizzaCerInput(input.value);
+
+  if (!input.value.trim()) {
+    resultBox.className = 'dsext-cer-result dsext-cer-result--vuoto';
+    resultBox.innerHTML = 'Inserisci un codice CER/EER, es. <strong>150203</strong> o <strong>15 02 03</strong>.';
+    return;
+  }
+
+  if (!codice) {
+    resultBox.className = 'dsext-cer-result dsext-cer-result--warning';
+    resultBox.textContent = 'Codice incompleto: servono 6 cifre.';
+    return;
+  }
+
+  const esito = _consultaCer(codice);
+  if (!esito || !esito.trovato) {
+    resultBox.className = 'dsext-cer-result dsext-cer-result--warning';
+    resultBox.innerHTML = `
+      <div class="dsext-cer-code">${_formattaCer(codice)}</div>
+      <div>Codice non trovato nel catalogo CER/EER operativo caricato.</div>
+    `;
+    return;
+  }
+
+  const classe = esito.pericoloso ? 'dsext-cer-result--haz' : 'dsext-cer-result--ok';
+  const stato = esito.pericoloso ? 'PERICOLOSO' : 'NON PERICOLOSO';
+  const nota = esito.pericoloso
+    ? 'Voce asteriscata nella lista CER/EER.'
+    : 'Voce non asteriscata nella lista CER/EER.';
+
+  resultBox.className = `dsext-cer-result ${classe}`;
+  resultBox.innerHTML = `
+    <div class="dsext-cer-result-head">
+      <span class="dsext-cer-code">${_formattaCer(esito.codice)}</span>
+      <span class="dsext-cer-badge">${stato}</span>
+    </div>
+    <div class="dsext-cer-desc"></div>
+    <div class="dsext-cer-note">${nota}</div>
+  `;
+  resultBox.querySelector('.dsext-cer-desc').textContent = esito.descrizione;
+}
+
 
 // ─── Applicazione del filtro ──────────────────────────────────────────────────
 
@@ -194,10 +262,23 @@ function _iniettaWidget(elementoTarget) {
   widget.setAttribute('aria-label', 'Filtro pericolosità CER');
 
   widget.innerHTML = `
-    <span class="dsext-label">Filtro CER:</span>
-    <button class="dsext-btn dsext-btn--attivo" data-filtro="tutti">Tutti</button>
-    <button class="dsext-btn" data-filtro="pericolosi">Pericolosi</button>
-    <button class="dsext-btn" data-filtro="non_pericolosi">Non pericolosi</button>
+    <div class="dsext-filter-row">
+      <span class="dsext-label">Filtro CER:</span>
+      <button class="dsext-btn dsext-btn--attivo" data-filtro="tutti">Tutti</button>
+      <button class="dsext-btn" data-filtro="pericolosi">Pericolosi</button>
+      <button class="dsext-btn" data-filtro="non_pericolosi">Non pericolosi</button>
+    </div>
+
+    <div class="dsext-cer-card" aria-label="Consulta CER rapido">
+      <div class="dsext-cer-title">Consulta CER</div>
+      <div class="dsext-cer-input-row">
+        <input id="dsext-cer-input" class="dsext-cer-input" type="text" inputmode="numeric" maxlength="12" placeholder="es. 150203 o 15 02 03" autocomplete="off">
+        <button class="dsext-btn" type="button" data-cer-clear>Pulisci</button>
+      </div>
+      <div id="dsext-cer-result" class="dsext-cer-result dsext-cer-result--vuoto">
+        Inserisci un codice CER/EER, es. <strong>150203</strong> o <strong>15 02 03</strong>.
+      </div>
+    </div>
   `;
 
   // Gestione click sui bottoni
@@ -216,6 +297,20 @@ function _iniettaWidget(elementoTarget) {
     });
 
     applyFilter();
+  });
+
+  const cerInput = widget.querySelector('#dsext-cer-input');
+  const cerResult = widget.querySelector('#dsext-cer-result');
+  const clearBtn = widget.querySelector('[data-cer-clear]');
+
+  cerInput.addEventListener('input', () => _aggiornaRispostaCer(cerInput, cerResult));
+  cerInput.addEventListener('keydown', evento => {
+    if (evento.key === 'Enter') _aggiornaRispostaCer(cerInput, cerResult);
+  });
+  clearBtn.addEventListener('click', () => {
+    cerInput.value = '';
+    _aggiornaRispostaCer(cerInput, cerResult);
+    cerInput.focus();
   });
 
   // Inserisce il widget nel DOM: prova a metterlo prima dell'elemento target,

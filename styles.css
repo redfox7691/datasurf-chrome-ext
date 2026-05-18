@@ -97,3 +97,137 @@ tr.dsext-nascosta {
     flex-wrap: wrap;
   }
 }
+
+
+/* ─── Card consultazione rapida CER ─────────────────────────────────────── */
+
+#dsext-filtro-cer {
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 520px;
+}
+
+.dsext-filter-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dsext-cer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dsext-cer-title {
+  color: #424242;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.dsext-cer-input-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dsext-cer-input {
+  min-width: 210px;
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #212121;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.3;
+  outline: none;
+}
+
+.dsext-cer-input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.12);
+}
+
+.dsext-cer-result {
+  min-height: 42px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  color: #424242;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.dsext-cer-result-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.dsext-cer-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.dsext-cer-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dsext-cer-desc {
+  color: #212121;
+  font-weight: 500;
+}
+
+.dsext-cer-note {
+  margin-top: 4px;
+  color: #616161;
+  font-size: 11px;
+}
+
+.dsext-cer-result--haz {
+  border-color: #ffcdd2;
+  background: #fff5f5;
+}
+
+.dsext-cer-result--haz .dsext-cer-badge {
+  background: #c62828;
+  color: #ffffff;
+}
+
+.dsext-cer-result--ok {
+  border-color: #c8e6c9;
+  background: #f6fff7;
+}
+
+.dsext-cer-result--ok .dsext-cer-badge {
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+.dsext-cer-result--warning {
+  border-color: #ffe0b2;
+  background: #fffaf2;
+  color: #5d4037;
+}
+
+.dsext-cer-result--vuoto {
+  color: #616161;
+}

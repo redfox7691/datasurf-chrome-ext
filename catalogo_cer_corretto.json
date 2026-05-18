@@ -1,0 +1,3370 @@
+{
+  "010101": {
+    "descrizione": "rifiuti da estrazione di minerali metalliferi",
+    "pericoloso": false
+  },
+  "010102": {
+    "descrizione": "rifiuti da estrazione di minerali non metalliferi",
+    "pericoloso": false
+  },
+  "010304": {
+    "descrizione": "sterili che possono generare acido prodotti dalla lavorazione di minerale solforoso",
+    "pericoloso": true
+  },
+  "010305": {
+    "descrizione": "altri sterili contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "010306": {
+    "descrizione": "sterili diversi da quelli di cui alle voci 01 03 04 e 01 03 05",
+    "pericoloso": false
+  },
+  "010307": {
+    "descrizione": "altri rifiuti contenenti sostanze pericolose prodotte da trattamenti chimici e fisici di minerali metalliferi",
+    "pericoloso": true
+  },
+  "010308": {
+    "descrizione": "polveri e residui affini, diversi da quelli di cui alla voce 01 03 07",
+    "pericoloso": false
+  },
+  "010309": {
+    "descrizione": "fanghi rossi derivanti dalla produzione di allumina, diversi da quelli di cui alla voce 01 03 10",
+    "pericoloso": false
+  },
+  "010310": {
+    "descrizione": "fanghi rossi derivanti dalla produzione di allumina contenenti sostanze pericolose, diversi da quelli di cui alla voce 01 03 07",
+    "pericoloso": true
+  },
+  "010399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "010407": {
+    "descrizione": "rifiuti contenenti sostanze pericolose, prodotti da trattamenti chimici e fisici di minerali non metalliferi",
+    "pericoloso": true
+  },
+  "010408": {
+    "descrizione": "scarti di ghiaia e pietrisco, diversi da quelli di cui alla voce 01 04 07",
+    "pericoloso": false
+  },
+  "010409": {
+    "descrizione": "scarti di sabbia e argilla",
+    "pericoloso": false
+  },
+  "010410": {
+    "descrizione": "polveri e residui affini, diversi da quelli di cui alla voce 01 04 07",
+    "pericoloso": false
+  },
+  "010411": {
+    "descrizione": "rifiuti della lavorazione di potassa e salgemma, diversi da quelli di cui alla voce 01 04 07",
+    "pericoloso": false
+  },
+  "010412": {
+    "descrizione": "sterili e altri residui del lavaggio e della pulitura di minerali, diversi da quelli di cui alle voci 01 04 07 e",
+    "pericoloso": false
+  },
+  "010413": {
+    "descrizione": "rifiuti prodotti dal taglio e dalla segagione della pietra, diversi da quelli di cui alla voce 01 04 07",
+    "pericoloso": false
+  },
+  "010499": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "010504": {
+    "descrizione": "fanghi e rifiuti di perforazione di pozzi per acque dolci",
+    "pericoloso": false
+  },
+  "010505": {
+    "descrizione": "fanghi di perforazione e rifiuti contenenti petrolio",
+    "pericoloso": true
+  },
+  "010506": {
+    "descrizione": "fanghi di perforazione ed altri rifiuti di perforazione contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "010507": {
+    "descrizione": "fanghi e rifiuti di perforazione contenenti barite, diversi da quelli delle voci 01 05 05 e 01 05 06",
+    "pericoloso": false
+  },
+  "010508": {
+    "descrizione": "fanghi e rifiuti di perforazione contenenti cloruri, diversi da quelli delle voci 01 05 05 e 01 05 06",
+    "pericoloso": false
+  },
+  "010599": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "020101": {
+    "descrizione": "fanghi da operazioni di lavaggio e pulizia",
+    "pericoloso": false
+  },
+  "020102": {
+    "descrizione": "scarti di tessuti animali",
+    "pericoloso": false
+  },
+  "020103": {
+    "descrizione": "scarti di tessuti vegetali",
+    "pericoloso": false
+  },
+  "020104": {
+    "descrizione": "rifiuti plastici (ad esclusione degli imballaggi)",
+    "pericoloso": false
+  },
+  "020106": {
+    "descrizione": "feci animali, urine e letame (comprese le lettiere usate), effluenti, raccolti separatamente e trattati fuori sito",
+    "pericoloso": false
+  },
+  "020107": {
+    "descrizione": "rifiuti derivanti dalla silvicoltura",
+    "pericoloso": false
+  },
+  "020108": {
+    "descrizione": "rifiuti agrochimici contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "020109": {
+    "descrizione": "rifiuti agrochimici diversi da quelli della voce 02 01 08",
+    "pericoloso": false
+  },
+  "020110": {
+    "descrizione": "rifiuti metallici",
+    "pericoloso": false
+  },
+  "020199": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "020201": {
+    "descrizione": "fanghi da operazioni di lavaggio e pulizia",
+    "pericoloso": false
+  },
+  "020202": {
+    "descrizione": "scarti di tessuti animali",
+    "pericoloso": false
+  },
+  "020203": {
+    "descrizione": "scarti inutilizzabili per il consumo o la trasformazione",
+    "pericoloso": false
+  },
+  "020204": {
+    "descrizione": "fanghi da trattamento sul posto degli effluenti",
+    "pericoloso": false
+  },
+  "020299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "020301": {
+    "descrizione": "fanghi prodotti da operazioni di lavaggio, pulizia, sbucciatura, centrifugazione e separazione",
+    "pericoloso": false
+  },
+  "020302": {
+    "descrizione": "rifiuti legati all'impiego di conservanti",
+    "pericoloso": false
+  },
+  "020303": {
+    "descrizione": "rifiuti prodotti dall'estrazione tramite solvente",
+    "pericoloso": false
+  },
+  "020304": {
+    "descrizione": "scarti inutilizzabili per il consumo o la trasformazione",
+    "pericoloso": false
+  },
+  "020305": {
+    "descrizione": "fanghi da trattamento sul posto degli effluenti",
+    "pericoloso": false
+  },
+  "020399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "020401": {
+    "descrizione": "terriccio residuo delle operazioni di pulizia e lavaggio delle barbabietole",
+    "pericoloso": false
+  },
+  "020402": {
+    "descrizione": "carbonato di calcio fuori specifica",
+    "pericoloso": false
+  },
+  "020403": {
+    "descrizione": "fanghi da trattamento sul posto degli effluenti",
+    "pericoloso": false
+  },
+  "020499": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "020501": {
+    "descrizione": "scarti inutilizzabili per il consumo o la trasformazione",
+    "pericoloso": false
+  },
+  "020502": {
+    "descrizione": "fanghi da trattamento sul posto degli effluenti",
+    "pericoloso": false
+  },
+  "020599": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "020601": {
+    "descrizione": "scarti inutilizzabili per il consumo o la trasformazione",
+    "pericoloso": false
+  },
+  "020602": {
+    "descrizione": "rifiuti prodotti dall'impiego di conservanti",
+    "pericoloso": false
+  },
+  "020603": {
+    "descrizione": "fanghi da trattamento sul posto degli effluenti",
+    "pericoloso": false
+  },
+  "020699": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "020701": {
+    "descrizione": "rifiuti prodotti dalle operazioni di lavaggio, pulizia e macinazione della materia prima",
+    "pericoloso": false
+  },
+  "020702": {
+    "descrizione": "rifiuti prodotti dalla distillazione di bevande alcoliche",
+    "pericoloso": false
+  },
+  "020703": {
+    "descrizione": "rifiuti prodotti dai trattamenti chimici",
+    "pericoloso": false
+  },
+  "020704": {
+    "descrizione": "scarti inutilizzabili per il consumo o la trasformazione",
+    "pericoloso": false
+  },
+  "020705": {
+    "descrizione": "fanghi da trattamento sul posto degli effluenti",
+    "pericoloso": false
+  },
+  "020799": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "030101": {
+    "descrizione": "scarti di corteccia e sughero",
+    "pericoloso": false
+  },
+  "030104": {
+    "descrizione": "segatura, trucioli, residui di taglio, legno, pannelli di truciolare e piallacci contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "030105": {
+    "descrizione": "segatura, trucioli, residui di taglio, legno, pannelli di truciolare e piallacci diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "030199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "030201": {
+    "descrizione": "preservanti del legno contenenti composti organici non alogenati",
+    "pericoloso": true
+  },
+  "030202": {
+    "descrizione": "prodotti per i trattamenti conservativi del legno contenenti composti organici clorurati",
+    "pericoloso": true
+  },
+  "030203": {
+    "descrizione": "prodotti per i trattamenti conservativi del legno contenenti composti organometallici",
+    "pericoloso": true
+  },
+  "030204": {
+    "descrizione": "prodotti per i trattamenti conservativi del legno contenenti composti inorganici",
+    "pericoloso": true
+  },
+  "030205": {
+    "descrizione": "altri prodotti per i trattamenti conservativi del legno contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "030299": {
+    "descrizione": "prodotti per i trattamenti conservativi del legno non altrimenti specificati",
+    "pericoloso": false
+  },
+  "030301": {
+    "descrizione": "scarti di corteccia e legno",
+    "pericoloso": false
+  },
+  "030302": {
+    "descrizione": "fanghi di recupero dei bagni di macerazione (green liquor)",
+    "pericoloso": false
+  },
+  "030305": {
+    "descrizione": "fanghi derivanti da processi di deinchiostrazione nel riciclaggio della carta",
+    "pericoloso": false
+  },
+  "030307": {
+    "descrizione": "scarti della separazione meccanica nella produzione di polpa da rifiuti di carta e cartone",
+    "pericoloso": false
+  },
+  "030308": {
+    "descrizione": "scarti della selezione di carta e cartone destinati ad essere riciclati",
+    "pericoloso": false
+  },
+  "030309": {
+    "descrizione": "fanghi di scarto contenenti carbonato di calcio",
+    "pericoloso": false
+  },
+  "030310": {
+    "descrizione": "scarti di fibre e fanghi contenenti fibre, riempitivi e prodotti di rivestimento generati dai processi di sepa­ razione meccanica",
+    "pericoloso": false
+  },
+  "030311": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 03 03 10",
+    "pericoloso": false
+  },
+  "030399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "040101": {
+    "descrizione": "carniccio e frammenti di calce",
+    "pericoloso": false
+  },
+  "040102": {
+    "descrizione": "rifiuti di calcinazione",
+    "pericoloso": false
+  },
+  "040103": {
+    "descrizione": "bagni di sgrassatura esauriti contenenti solventi senza fase liquida",
+    "pericoloso": true
+  },
+  "040104": {
+    "descrizione": "liquido di concia contenente cromo",
+    "pericoloso": false
+  },
+  "040105": {
+    "descrizione": "liquido di concia non contenente cromo",
+    "pericoloso": false
+  },
+  "040106": {
+    "descrizione": "fanghi, prodotti in particolare dal trattamento in loco degli effluenti, contenenti cromo",
+    "pericoloso": false
+  },
+  "040107": {
+    "descrizione": "fanghi, prodotti in particolare dal trattamento in loco degli effluenti, non contenenti cromo",
+    "pericoloso": false
+  },
+  "040108": {
+    "descrizione": "rifiuti di cuoio conciato (scarti, cascami, ritagli, polveri di lucidatura) contenenti cromo",
+    "pericoloso": false
+  },
+  "040109": {
+    "descrizione": "rifiuti delle operazioni di confezionamento e finitura",
+    "pericoloso": false
+  },
+  "040199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "040209": {
+    "descrizione": "rifiuti da materiali compositi (fibre impregnate, elastomeri, plastomeri)",
+    "pericoloso": false
+  },
+  "040210": {
+    "descrizione": "materiale organico proveniente da prodotti naturali (ad esempio grasso, cera)",
+    "pericoloso": false
+  },
+  "040214": {
+    "descrizione": "rifiuti provenienti da operazioni di finitura, contenenti solventi organici",
+    "pericoloso": true
+  },
+  "040215": {
+    "descrizione": "rifiuti da operazioni di finitura, diversi da quelli di cui alla voce 04 02 14",
+    "pericoloso": false
+  },
+  "040216": {
+    "descrizione": "tinture e pigmenti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "040217": {
+    "descrizione": "tinture e pigmenti, diversi da quelli di cui alla voce 04 02 16",
+    "pericoloso": false
+  },
+  "040219": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "040220": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 04 02 19",
+    "pericoloso": false
+  },
+  "040221": {
+    "descrizione": "rifiuti da fibre tessili grezze",
+    "pericoloso": false
+  },
+  "040222": {
+    "descrizione": "rifiuti da fibre tessili lavorate",
+    "pericoloso": false
+  },
+  "040299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "050102": {
+    "descrizione": "fanghi da processi di dissalazione",
+    "pericoloso": true
+  },
+  "050103": {
+    "descrizione": "morchie da fondi di serbatoi",
+    "pericoloso": true
+  },
+  "050104": {
+    "descrizione": "fanghi di alchili acidi",
+    "pericoloso": true
+  },
+  "050105": {
+    "descrizione": "perdite di olio",
+    "pericoloso": true
+  },
+  "050106": {
+    "descrizione": "fanghi oleosi prodotti dalla manutenzione di impianti e apparecchiature",
+    "pericoloso": true
+  },
+  "050107": {
+    "descrizione": "catrami acidi",
+    "pericoloso": true
+  },
+  "050108": {
+    "descrizione": "altri catrami",
+    "pericoloso": true
+  },
+  "050109": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "050110": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 05 01 09",
+    "pericoloso": false
+  },
+  "050111": {
+    "descrizione": "rifiuti prodotti dalla purificazione di carburanti mediante basi",
+    "pericoloso": true
+  },
+  "050112": {
+    "descrizione": "acidi contenenti oli",
+    "pericoloso": true
+  },
+  "050113": {
+    "descrizione": "fanghi residui dell'acqua di alimentazione delle caldaie",
+    "pericoloso": false
+  },
+  "050114": {
+    "descrizione": "rifiuti prodotti dalle torri di raffreddamento",
+    "pericoloso": false
+  },
+  "050115": {
+    "descrizione": "filtri di argilla esauriti",
+    "pericoloso": true
+  },
+  "050116": {
+    "descrizione": "rifiuti contenenti zolfo prodotti dalla desolforizzazione del petrolio",
+    "pericoloso": false
+  },
+  "050117": {
+    "descrizione": "Bitume",
+    "pericoloso": false
+  },
+  "050199": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "050601": {
+    "descrizione": "catrami acidi",
+    "pericoloso": true
+  },
+  "050603": {
+    "descrizione": "altri catrami",
+    "pericoloso": true
+  },
+  "050604": {
+    "descrizione": "rifiuti prodotti dalle torri di raffreddamento",
+    "pericoloso": false
+  },
+  "050699": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "050701": {
+    "descrizione": "rifiuti contenenti mercurio",
+    "pericoloso": true
+  },
+  "050702": {
+    "descrizione": "rifiuti contenenti zolfo",
+    "pericoloso": false
+  },
+  "050799": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "060101": {
+    "descrizione": "acido solforico e acido solforoso",
+    "pericoloso": true
+  },
+  "060102": {
+    "descrizione": "acido cloridrico",
+    "pericoloso": true
+  },
+  "060103": {
+    "descrizione": "acido fluoridrico",
+    "pericoloso": true
+  },
+  "060104": {
+    "descrizione": "acido fosforico e fosforoso",
+    "pericoloso": true
+  },
+  "060105": {
+    "descrizione": "acido nitrico e acido nitroso",
+    "pericoloso": true
+  },
+  "060106": {
+    "descrizione": "altri acidi",
+    "pericoloso": true
+  },
+  "060199": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "060201": {
+    "descrizione": "idrossido di calcio",
+    "pericoloso": true
+  },
+  "060203": {
+    "descrizione": "idrossido di ammonio",
+    "pericoloso": true
+  },
+  "060204": {
+    "descrizione": "idrossido di sodio e di potassio",
+    "pericoloso": true
+  },
+  "060205": {
+    "descrizione": "altre basi",
+    "pericoloso": true
+  },
+  "060299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "060311": {
+    "descrizione": "sali e loro soluzioni, contenenti cianuri",
+    "pericoloso": true
+  },
+  "060313": {
+    "descrizione": "sali e loro soluzioni, contenenti metalli pesanti",
+    "pericoloso": true
+  },
+  "060314": {
+    "descrizione": "sali e loro soluzioni, diversi da quelli di cui alle voci 06 03 11 e 06 03 13",
+    "pericoloso": false
+  },
+  "060315": {
+    "descrizione": "ossidi metallici contenenti metalli pesanti",
+    "pericoloso": true
+  },
+  "060316": {
+    "descrizione": "ossidi metallici, diversi da quelli di cui alla voce 06 03 15",
+    "pericoloso": false
+  },
+  "060399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "060403": {
+    "descrizione": "rifiuti contenenti arsenico",
+    "pericoloso": true
+  },
+  "060404": {
+    "descrizione": "rifiuti contenenti mercurio",
+    "pericoloso": true
+  },
+  "060405": {
+    "descrizione": "rifiuti contenenti altri metalli pesanti",
+    "pericoloso": true
+  },
+  "060499": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "060502": {
+    "descrizione": "fanghi prodotti dal trattamento in loco di effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "060503": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 06 05 02",
+    "pericoloso": false
+  },
+  "060602": {
+    "descrizione": "rifiuti contenenti solfuri pericolosi",
+    "pericoloso": true
+  },
+  "060603": {
+    "descrizione": "rifiuti contenenti solfuri, diversi da quelli di cui alla voce 06 06 02",
+    "pericoloso": false
+  },
+  "060699": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "060701": {
+    "descrizione": "rifiuti dei processi elettrolitici, contenenti amianto",
+    "pericoloso": true
+  },
+  "060702": {
+    "descrizione": "carbone attivato dalla produzione di cloro",
+    "pericoloso": true
+  },
+  "060703": {
+    "descrizione": "fanghi di solfati di bario, contenenti mercurio",
+    "pericoloso": true
+  },
+  "060704": {
+    "descrizione": "soluzioni ed acidi, ad esempio acido di contatto",
+    "pericoloso": true
+  },
+  "060799": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "060802": {
+    "descrizione": "rifiuti contenenti clorosilani pericolosi",
+    "pericoloso": true
+  },
+  "060899": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "060902": {
+    "descrizione": "scorie contenenti fosforo",
+    "pericoloso": false
+  },
+  "060903": {
+    "descrizione": "rifiuti prodotti da reazioni a base di calcio contenenti o contaminati da sostanze pericolose",
+    "pericoloso": true
+  },
+  "060904": {
+    "descrizione": "rifiuti prodotti da reazioni a base di calcio, diversi da quelli di cui alla voce 06 09 03",
+    "pericoloso": false
+  },
+  "060999": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "061002": {
+    "descrizione": "rifiuti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "061099": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "061101": {
+    "descrizione": "rifiuti prodotti da reazioni a base di calcio nella produzione di diossido di titanio",
+    "pericoloso": false
+  },
+  "061199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "061301": {
+    "descrizione": "prodotti fitosanitari, agenti conservativi del legno ed altri biocidi inorganici",
+    "pericoloso": true
+  },
+  "061302": {
+    "descrizione": "carbone attivo esaurito (tranne 06 07 02)",
+    "pericoloso": true
+  },
+  "061303": {
+    "descrizione": "nerofumo",
+    "pericoloso": false
+  },
+  "061304": {
+    "descrizione": "rifiuti derivanti dai processi di lavorazione dell'amianto",
+    "pericoloso": true
+  },
+  "061305": {
+    "descrizione": "Fuliggine",
+    "pericoloso": true
+  },
+  "061399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "070101": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070103": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070104": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070107": {
+    "descrizione": "fondi e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070108": {
+    "descrizione": "altri fondi e residui di reazione",
+    "pericoloso": true
+  },
+  "070109": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti alogenati",
+    "pericoloso": true
+  },
+  "070110": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070111": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070112": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 01 11",
+    "pericoloso": false
+  },
+  "070199": {
+    "descrizione": "rifiuti non altrimenti specificati",
+    "pericoloso": false
+  },
+  "070201": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070203": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070204": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070207": {
+    "descrizione": "fondi e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070208": {
+    "descrizione": "altri fondi e residui di reazione",
+    "pericoloso": true
+  },
+  "070209": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti alogenati",
+    "pericoloso": true
+  },
+  "070210": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070211": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070212": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 02 11",
+    "pericoloso": false
+  },
+  "070213": {
+    "descrizione": "rifiuti plastici",
+    "pericoloso": false
+  },
+  "070214": {
+    "descrizione": "rifiuti prodotti da additivi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070215": {
+    "descrizione": "rifiuti prodotti da additivi, diversi da quelli di cui alla voce 07 02 14",
+    "pericoloso": false
+  },
+  "070216": {
+    "descrizione": "rifiuti contenenti siliconi pericolosi",
+    "pericoloso": true
+  },
+  "070217": {
+    "descrizione": "rifiuti contenenti silicio, diversi da quelli di cui alla voce 07 02 16",
+    "pericoloso": false
+  },
+  "070299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "070301": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070303": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070304": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070307": {
+    "descrizione": "fondi e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070308": {
+    "descrizione": "altri fondi e residui di reazione",
+    "pericoloso": true
+  },
+  "070309": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti, alogenati",
+    "pericoloso": true
+  },
+  "070310": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070311": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070312": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 03 11",
+    "pericoloso": false
+  },
+  "070399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "070401": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070403": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070404": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070407": {
+    "descrizione": "fondi e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070408": {
+    "descrizione": "altri fondi e residui di reazione",
+    "pericoloso": true
+  },
+  "070409": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti alogenati",
+    "pericoloso": true
+  },
+  "070410": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070411": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070412": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 04 11",
+    "pericoloso": false
+  },
+  "070413": {
+    "descrizione": "rifiuti solidi contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070499": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "070501": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070503": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070504": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070507": {
+    "descrizione": "fondi e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070508": {
+    "descrizione": "altri fondi e residui di reazione",
+    "pericoloso": true
+  },
+  "070509": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti alogenati",
+    "pericoloso": true
+  },
+  "070510": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070511": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070512": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 05 11",
+    "pericoloso": false
+  },
+  "070513": {
+    "descrizione": "rifiuti solidi contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070514": {
+    "descrizione": "rifiuti solidi diversi da quelli di cui alla voce 07 05 13",
+    "pericoloso": false
+  },
+  "070599": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "070601": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070603": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070604": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070607": {
+    "descrizione": "fondi e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070608": {
+    "descrizione": "altri fondi e residui di reazione",
+    "pericoloso": true
+  },
+  "070609": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti alogenati",
+    "pericoloso": true
+  },
+  "070610": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070611": {
+    "descrizione": "fanghi prodotti dal trattamento in loco di effluenti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070612": {
+    "descrizione": "fanghi prodotti dal trattamento in loco di effluenti, diversi da quelli di cui alla voce 07 06 11",
+    "pericoloso": false
+  },
+  "070699": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "070701": {
+    "descrizione": "soluzioni acquose di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070703": {
+    "descrizione": "solventi organici alogenati, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070704": {
+    "descrizione": "altri solventi organici, soluzioni di lavaggio e acque madri",
+    "pericoloso": true
+  },
+  "070707": {
+    "descrizione": "residui di distillazione e residui di reazione, alogenati",
+    "pericoloso": true
+  },
+  "070708": {
+    "descrizione": "altri residui di distillazione e residui di reazione",
+    "pericoloso": true
+  },
+  "070709": {
+    "descrizione": "residui di filtrazione e assorbenti esauriti alogenati",
+    "pericoloso": true
+  },
+  "070710": {
+    "descrizione": "altri residui di filtrazione e assorbenti esauriti",
+    "pericoloso": true
+  },
+  "070711": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "070712": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 07 07 11",
+    "pericoloso": false
+  },
+  "070799": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "080111": {
+    "descrizione": "pitture e vernici di scarto, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080112": {
+    "descrizione": "pitture e vernici di scarto, diverse da quelle di cui alla voce 08 01 11",
+    "pericoloso": false
+  },
+  "080113": {
+    "descrizione": "fanghi prodotti da pitture e vernici, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080114": {
+    "descrizione": "fanghi prodotti da pitture e vernici, diversi da quelli di cui alla voce 08 01 13",
+    "pericoloso": false
+  },
+  "080115": {
+    "descrizione": "fanghi acquosi contenenti pitture e vernici, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080116": {
+    "descrizione": "fanghi acquosi contenenti pitture e vernici, diversi da quelli di cui alla voce 08 01 15",
+    "pericoloso": false
+  },
+  "080117": {
+    "descrizione": "fanghi prodotti dalla rimozione di pitture e vernici, contenenti solventi organici o altre sostanze perico­ lose",
+    "pericoloso": true
+  },
+  "080118": {
+    "descrizione": "fanghi prodotti dalla rimozione di pitture e vernici, diversi da quelli di cui alla voce 08 01 17",
+    "pericoloso": false
+  },
+  "080119": {
+    "descrizione": "sospensioni acquose contenenti pitture e vernici, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080120": {
+    "descrizione": "sospensioni acquose contenenti pitture e vernici, diverse da quelle di cui alla voce 08 01 19",
+    "pericoloso": false
+  },
+  "080121": {
+    "descrizione": "residui di pittura o di sverniciatori",
+    "pericoloso": true
+  },
+  "080199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "080201": {
+    "descrizione": "polveri di scarti di rivestimenti",
+    "pericoloso": false
+  },
+  "080202": {
+    "descrizione": "fanghi acquosi contenenti materiali ceramici",
+    "pericoloso": false
+  },
+  "080203": {
+    "descrizione": "sospensioni acquose contenenti materiali ceramici",
+    "pericoloso": false
+  },
+  "080299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "080307": {
+    "descrizione": "fanghi acquosi contenenti inchiostro",
+    "pericoloso": false
+  },
+  "080308": {
+    "descrizione": "rifiuti liquidi acquosi contenenti inchiostro",
+    "pericoloso": false
+  },
+  "080312": {
+    "descrizione": "scarti di inchiostro, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "080313": {
+    "descrizione": "scarti di inchiostro, diversi da quelli di cui alla voce 08 03 12",
+    "pericoloso": false
+  },
+  "080314": {
+    "descrizione": "fanghi di inchiostro, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "080315": {
+    "descrizione": "fanghi di inchiostro, diversi da quelli di cui alla voce 08 03 14",
+    "pericoloso": false
+  },
+  "080316": {
+    "descrizione": "residui di soluzioni per incisione",
+    "pericoloso": true
+  },
+  "080317": {
+    "descrizione": "toner per stampa esauriti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "080318": {
+    "descrizione": "toner per stampa esauriti, diversi da quelli di cui alla voce 08 03 17",
+    "pericoloso": false
+  },
+  "080319": {
+    "descrizione": "oli disperdenti",
+    "pericoloso": true
+  },
+  "080399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "080409": {
+    "descrizione": "adesivi e sigillanti di scarto, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080410": {
+    "descrizione": "adesivi e sigillanti di scarto, diversi da quelli di cui alla voce 08 04 09",
+    "pericoloso": false
+  },
+  "080411": {
+    "descrizione": "fanghi di adesivi e sigillanti, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080412": {
+    "descrizione": "fanghi di adesivi e sigillanti, diversi da quelli di cui alla voce 08 04 11",
+    "pericoloso": false
+  },
+  "080413": {
+    "descrizione": "fanghi acquosi contenenti adesivi o sigillanti, contenenti solventi organici o altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "080414": {
+    "descrizione": "fanghi acquosi contenenti adesivi o sigillanti, diversi da quelli di cui alla voce 08 04 13",
+    "pericoloso": false
+  },
+  "080415": {
+    "descrizione": "rifiuti liquidi acquosi contenenti adesivi o sigillanti, contenenti solventi organici o altre sostanze perico­ lose",
+    "pericoloso": true
+  },
+  "080416": {
+    "descrizione": "rifiuti liquidi acquosi contenenti adesivi o sigillanti, diversi da quelli di cui alla voce 08 04 15",
+    "pericoloso": false
+  },
+  "080417": {
+    "descrizione": "olio di resina",
+    "pericoloso": true
+  },
+  "080499": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "080501": {
+    "descrizione": "isocianati di scarto",
+    "pericoloso": true
+  },
+  "090101": {
+    "descrizione": "soluzioni di sviluppo e soluzioni attivanti a base acquosa",
+    "pericoloso": true
+  },
+  "090102": {
+    "descrizione": "soluzioni di sviluppo per lastre offset a base acquosa",
+    "pericoloso": true
+  },
+  "090103": {
+    "descrizione": "soluzioni di sviluppo a base di solventi",
+    "pericoloso": true
+  },
+  "090104": {
+    "descrizione": "soluzioni di fissaggio",
+    "pericoloso": true
+  },
+  "090105": {
+    "descrizione": "soluzioni di lavaggio e di lavaggio del fissatore",
+    "pericoloso": true
+  },
+  "090106": {
+    "descrizione": "rifiuti contenenti argento prodotti dal trattamento in loco di rifiuti fotografici",
+    "pericoloso": true
+  },
+  "090107": {
+    "descrizione": "pellicole e carta per fotografia, contenenti argento o composti dell'argento",
+    "pericoloso": false
+  },
+  "090108": {
+    "descrizione": "pellicole e carta per fotografia, non contenenti argento o composti dell'argento",
+    "pericoloso": false
+  },
+  "090110": {
+    "descrizione": "macchine fotografiche monouso senza batterie",
+    "pericoloso": false
+  },
+  "090111": {
+    "descrizione": "macchine fotografiche monouso contenenti batterie incluse nelle voci 16 06 01, 16 06 02 o 16 06 03",
+    "pericoloso": true
+  },
+  "090112": {
+    "descrizione": "macchine fotografiche monouso diverse da quelle di cui alla voce 09 01 11",
+    "pericoloso": false
+  },
+  "090113": {
+    "descrizione": "rifiuti liquidi acquosi prodotti dal recupero in loco dell'argento, diversi da quelli di cui alla voce 09 01 06",
+    "pericoloso": true
+  },
+  "090199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100101": {
+    "descrizione": "ceneri pesanti, fanghi e polveri di caldaia (tranne le polveri di caldaia di cui alla voce 10 01 04)",
+    "pericoloso": false
+  },
+  "100102": {
+    "descrizione": "ceneri leggere di carbone",
+    "pericoloso": false
+  },
+  "100103": {
+    "descrizione": "ceneri leggere di torba e di legno non trattato",
+    "pericoloso": false
+  },
+  "100104": {
+    "descrizione": "ceneri leggere di olio combustibile e polveri di caldaia",
+    "pericoloso": true
+  },
+  "100105": {
+    "descrizione": "rifiuti solidi prodotti da reazioni a base di calcio nei processi di desolforazione dei fumi",
+    "pericoloso": false
+  },
+  "100107": {
+    "descrizione": "rifiuti fangosi prodotti da reazioni a base di calcio nei processi di desolforazione dei fumi",
+    "pericoloso": false
+  },
+  "100109": {
+    "descrizione": "acido solforico",
+    "pericoloso": true
+  },
+  "100113": {
+    "descrizione": "ceneri leggere prodotte da idrocarburi emulsionati usati come combustibile",
+    "pericoloso": true
+  },
+  "100114": {
+    "descrizione": "ceneri pesanti, scorie e polveri di caldaia prodotte dal coincenerimento, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100115": {
+    "descrizione": "ceneri pesanti, fanghi e polveri di caldaia prodotti dal coincenerimento, diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "100116": {
+    "descrizione": "ceneri leggere prodotte dal coincenerimento, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100117": {
+    "descrizione": "ceneri leggere prodotte dal coincenerimento, diverse da quelle di cui alla voce 10 01 16",
+    "pericoloso": false
+  },
+  "100118": {
+    "descrizione": "rifiuti prodotti dalla depurazione dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100119": {
+    "descrizione": "rifiuti prodotti dalla depurazione dei fumi, diversi da quelli di cui alle voci 10 01 05, 10 01 07 e",
+    "pericoloso": false
+  },
+  "100120": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100121": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti, diversi da quelli di cui alla voce 10 01 20",
+    "pericoloso": false
+  },
+  "100122": {
+    "descrizione": "fanghi acquosi da operazioni di pulizia di caldaie, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100123": {
+    "descrizione": "fanghi acquosi da operazioni di pulizia di caldaie, diversi da quelli di cui alla voce 10 01 22",
+    "pericoloso": false
+  },
+  "100124": {
+    "descrizione": "sabbie dei reattori a letto fluidizzato",
+    "pericoloso": false
+  },
+  "100125": {
+    "descrizione": "rifiuti dell'immagazzinamento e della preparazione del combustibile delle centrali termoelettriche a carbone",
+    "pericoloso": false
+  },
+  "100126": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento",
+    "pericoloso": false
+  },
+  "100199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100201": {
+    "descrizione": "rifiuti del trattamento delle scorie",
+    "pericoloso": false
+  },
+  "100202": {
+    "descrizione": "scorie non trattate",
+    "pericoloso": false
+  },
+  "100207": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100208": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 02 07",
+    "pericoloso": false
+  },
+  "100210": {
+    "descrizione": "scaglie di laminazione",
+    "pericoloso": false
+  },
+  "100211": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100212": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 02 11",
+    "pericoloso": false
+  },
+  "100213": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100214": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 02 13",
+    "pericoloso": false
+  },
+  "100215": {
+    "descrizione": "altri fanghi e residui di filtrazione",
+    "pericoloso": false
+  },
+  "100299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100302": {
+    "descrizione": "frammenti di anodi",
+    "pericoloso": false
+  },
+  "100304": {
+    "descrizione": "scorie della produzione primaria",
+    "pericoloso": true
+  },
+  "100305": {
+    "descrizione": "rifiuti di allumina",
+    "pericoloso": false
+  },
+  "100308": {
+    "descrizione": "scorie saline della produzione secondaria",
+    "pericoloso": true
+  },
+  "100309": {
+    "descrizione": "scorie nere della produzione secondaria",
+    "pericoloso": true
+  },
+  "100315": {
+    "descrizione": "schiumature infiammabili o che rilasciano, al contatto con l'acqua, gas infiammabili in quantità pericolose",
+    "pericoloso": true
+  },
+  "100316": {
+    "descrizione": "scorie diverse da quelle di cui alla voce 10 03 15",
+    "pericoloso": false
+  },
+  "100317": {
+    "descrizione": "rifiuti contenenti catrame derivanti dalla produzione di anodi",
+    "pericoloso": true
+  },
+  "100318": {
+    "descrizione": "rifiuti contenenti carbonio derivanti dalla produzione di anodi, diversi da quelli di cui alla voce 10 03 17",
+    "pericoloso": false
+  },
+  "100319": {
+    "descrizione": "polveri dei gas di combustione contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100320": {
+    "descrizione": "polveri di gas di combustione, diverse da quelle di cui alla voce 10 03 19",
+    "pericoloso": false
+  },
+  "100321": {
+    "descrizione": "altri particolati e polveri (compresi quelli prodotti da mulini a palle), contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100322": {
+    "descrizione": "altri particolati e polveri (compresi quelli prodotte da mulini a palle), diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "100323": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100324": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 03 23",
+    "pericoloso": false
+  },
+  "100325": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100326": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 03 25",
+    "pericoloso": false
+  },
+  "100327": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100328": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 03 27",
+    "pericoloso": false
+  },
+  "100329": {
+    "descrizione": "rifiuti prodotti dal trattamento di scorie saline e scorie nere, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100330": {
+    "descrizione": "rifiuti prodotti dal trattamento di scorie saline e scorie nere, diversi da quelli di cui alla voce 10 03 29",
+    "pericoloso": false
+  },
+  "100399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100401": {
+    "descrizione": "scorie della produzione primaria e secondaria",
+    "pericoloso": true
+  },
+  "100402": {
+    "descrizione": "scorie e schiumature della produzione primaria e secondaria",
+    "pericoloso": true
+  },
+  "100403": {
+    "descrizione": "arsenato di calcio",
+    "pericoloso": true
+  },
+  "100404": {
+    "descrizione": "polveri di gas di combustione",
+    "pericoloso": true
+  },
+  "100405": {
+    "descrizione": "altre polveri e particolato",
+    "pericoloso": true
+  },
+  "100406": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "100407": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "100409": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100410": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 4 09",
+    "pericoloso": false
+  },
+  "100499": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100501": {
+    "descrizione": "scorie della produzione primaria e secondaria",
+    "pericoloso": false
+  },
+  "100503": {
+    "descrizione": "polveri di gas di combustione",
+    "pericoloso": true
+  },
+  "100504": {
+    "descrizione": "altre polveri e particolato",
+    "pericoloso": false
+  },
+  "100505": {
+    "descrizione": "rifiuti solidi derivanti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "100506": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "100508": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100509": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 05 08",
+    "pericoloso": false
+  },
+  "100510": {
+    "descrizione": "scorie e schiumature infiammabili o che rilasciano, al contatto con l'acqua, gas infiammabili in quantità pericolose",
+    "pericoloso": true
+  },
+  "100511": {
+    "descrizione": "scorie e schiumature diverse da quelle di cui alla voce 10 05 10",
+    "pericoloso": false
+  },
+  "100599": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100601": {
+    "descrizione": "scorie della produzione primaria e secondaria",
+    "pericoloso": false
+  },
+  "100602": {
+    "descrizione": "scorie e schiumature della produzione primaria e secondaria",
+    "pericoloso": false
+  },
+  "100603": {
+    "descrizione": "polveri di gas di combustione",
+    "pericoloso": true
+  },
+  "100604": {
+    "descrizione": "altre polveri e particolato",
+    "pericoloso": false
+  },
+  "100606": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "100607": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "100609": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100610": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 06 09",
+    "pericoloso": false
+  },
+  "100699": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100701": {
+    "descrizione": "scorie della produzione primaria e secondaria",
+    "pericoloso": false
+  },
+  "100702": {
+    "descrizione": "scorie e schiumature della produzione primaria e secondaria",
+    "pericoloso": false
+  },
+  "100703": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi",
+    "pericoloso": false
+  },
+  "100704": {
+    "descrizione": "altre polveri e particolato",
+    "pericoloso": false
+  },
+  "100705": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": false
+  },
+  "100707": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100708": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 07 07",
+    "pericoloso": false
+  },
+  "100799": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100804": {
+    "descrizione": "particolato e polveri",
+    "pericoloso": false
+  },
+  "100808": {
+    "descrizione": "scorie saline della produzione primaria e secondaria",
+    "pericoloso": true
+  },
+  "100809": {
+    "descrizione": "altre scorie",
+    "pericoloso": false
+  },
+  "100810": {
+    "descrizione": "scorie e schiumature infiammabili o che rilasciano, al contatto con l'acqua, gas infiammabili in quantità pericolose",
+    "pericoloso": true
+  },
+  "100811": {
+    "descrizione": "scorie e schiumature diverse da quelle di cui alla voce 10 08 10",
+    "pericoloso": false
+  },
+  "100812": {
+    "descrizione": "rifiuti contenenti catrame derivanti dalla produzione di anodi",
+    "pericoloso": true
+  },
+  "100813": {
+    "descrizione": "rifiuti contenenti carbonio derivanti dalla produzione di anodi, diversi da quelli di cui alla voce 10 08 12",
+    "pericoloso": false
+  },
+  "100814": {
+    "descrizione": "frammenti di anodi",
+    "pericoloso": false
+  },
+  "100815": {
+    "descrizione": "polveri dei gas di combustione contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100816": {
+    "descrizione": "polveri di gas di combustione, diverse da quelle di cui alla voce 10 08 15",
+    "pericoloso": false
+  },
+  "100817": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento di fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100818": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento di fumi, diversi da quelli di cui alla voce 10 08 17",
+    "pericoloso": false
+  },
+  "100819": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, contenenti oli",
+    "pericoloso": true
+  },
+  "100820": {
+    "descrizione": "rifiuti prodotti dal trattamento delle acque di raffreddamento, diversi da quelli di cui alla voce 10 08 19",
+    "pericoloso": false
+  },
+  "100899": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "100903": {
+    "descrizione": "scorie di fusione",
+    "pericoloso": false
+  },
+  "100905": {
+    "descrizione": "forme e anime da fonderia inutilizzate, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100906": {
+    "descrizione": "forme e anime da fonderia inutilizzate, diverse da quelle di cui alla voce 10 09 05",
+    "pericoloso": false
+  },
+  "100907": {
+    "descrizione": "forme e anime da fonderia utilizzate, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100908": {
+    "descrizione": "forme e anime da fonderia utilizzate, diverse da quelle di cui alla voce 10 09 07",
+    "pericoloso": false
+  },
+  "100909": {
+    "descrizione": "polveri dei gas di combustione contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100910": {
+    "descrizione": "polveri dei gas di combustione, diverse da quelle di cui alla voce 10 09 09",
+    "pericoloso": false
+  },
+  "100911": {
+    "descrizione": "altri particolati contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100912": {
+    "descrizione": "altri particolati diversi da quelli di cui alla voce 10 09 11",
+    "pericoloso": false
+  },
+  "100913": {
+    "descrizione": "scarti di leganti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100914": {
+    "descrizione": "scarti di leganti diversi da quelli di cui alla voce 10 09 13",
+    "pericoloso": false
+  },
+  "100915": {
+    "descrizione": "scarti di rilevatori di crepe, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "100916": {
+    "descrizione": "scarti di rilevatori di crepe, diversi da quelli di cui alla voce 10 09 15",
+    "pericoloso": false
+  },
+  "100999": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "101003": {
+    "descrizione": "scorie di fusione",
+    "pericoloso": false
+  },
+  "101005": {
+    "descrizione": "forme e anime da fonderia inutilizzate, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101006": {
+    "descrizione": "forme e anime da fonderia inutilizzate, diverse da quelle di cui alla voce 10 10 05",
+    "pericoloso": false
+  },
+  "101007": {
+    "descrizione": "forme e anime da fonderia utilizzate, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101008": {
+    "descrizione": "forme e anime da fonderia utilizzate, diverse da quelle di cui alla voce 10 10 07",
+    "pericoloso": false
+  },
+  "101009": {
+    "descrizione": "polveri di gas di combustione contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101010": {
+    "descrizione": "polveri di gas di combustione, diverse da quelle di cui alla voce 10 10 09",
+    "pericoloso": false
+  },
+  "101011": {
+    "descrizione": "altri particolati contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101012": {
+    "descrizione": "altri particolati diversi da quelli di cui alla voce 10 10 11",
+    "pericoloso": false
+  },
+  "101013": {
+    "descrizione": "scarti di leganti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101014": {
+    "descrizione": "scarti di leganti diversi da quelli di cui alla voce 10 10 13",
+    "pericoloso": false
+  },
+  "101015": {
+    "descrizione": "scarti di rilevatori di crepe, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101016": {
+    "descrizione": "scarti di rilevatori di crepe, diversi da quelli di cui alla voce 10 10 15",
+    "pericoloso": false
+  },
+  "101099": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "101103": {
+    "descrizione": "scarti di materiali in fibra a base di vetro",
+    "pericoloso": false
+  },
+  "101105": {
+    "descrizione": "particolato e polveri",
+    "pericoloso": false
+  },
+  "101109": {
+    "descrizione": "residui di miscela di preparazione non sottoposti a trattamento termico, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101110": {
+    "descrizione": "residui di miscela di preparazione non sottoposti a trattamento termico, diversi da quelle di cui alla voce",
+    "pericoloso": false
+  },
+  "101111": {
+    "descrizione": "rifiuti di vetro in forma di particolato e polveri di vetro contenenti metalli pesanti (provenienti ad esempio da tubi a raggi catodici)",
+    "pericoloso": true
+  },
+  "101112": {
+    "descrizione": "rifiuti di vetro diversi da quelli di cui alla voce 10 11 11",
+    "pericoloso": false
+  },
+  "101113": {
+    "descrizione": "fanghi provenienti dalla lucidatura e dalla macinazione del vetro, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101114": {
+    "descrizione": "fanghi provenienti dalla lucidatura e dalla macinazione del vetro, diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "101115": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento di fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101116": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento di fumi, diversi da quelli di cui alla voce 10 11 15",
+    "pericoloso": false
+  },
+  "101117": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101118": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 11 17",
+    "pericoloso": false
+  },
+  "101119": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento in loco di effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101120": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento in loco di effluenti, diversi da quelli di cui alla voce 10 11 19",
+    "pericoloso": false
+  },
+  "101199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "101201": {
+    "descrizione": "residui di miscela di preparazione non sottoposti a trattamento termico",
+    "pericoloso": false
+  },
+  "101203": {
+    "descrizione": "polveri e particolato",
+    "pericoloso": false
+  },
+  "101205": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": false
+  },
+  "101206": {
+    "descrizione": "stampi di scarto",
+    "pericoloso": false
+  },
+  "101208": {
+    "descrizione": "scarti di ceramica, mattoni, mattonelle e materiali da costruzione (sottoposti a trattamento termico)",
+    "pericoloso": false
+  },
+  "101209": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101210": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 12 09",
+    "pericoloso": false
+  },
+  "101211": {
+    "descrizione": "rifiuti delle operazioni di smaltatura, contenenti metalli pesanti",
+    "pericoloso": true
+  },
+  "101212": {
+    "descrizione": "rifiuti delle operazioni di smaltatura diversi da quelli di cui alla voce 10 12 11",
+    "pericoloso": false
+  },
+  "101213": {
+    "descrizione": "fanghi prodotti dal trattamento in loco degli effluenti",
+    "pericoloso": false
+  },
+  "101299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "101301": {
+    "descrizione": "residui di miscela di preparazione non sottoposti a trattamento termico",
+    "pericoloso": false
+  },
+  "101304": {
+    "descrizione": "rifiuti di calcinazione e di idratazione della calce",
+    "pericoloso": false
+  },
+  "101306": {
+    "descrizione": "particolato e polveri (eccetto quelli delle voci 10 13 12 e 10 13 13)",
+    "pericoloso": false
+  },
+  "101307": {
+    "descrizione": "fanghi e residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": false
+  },
+  "101309": {
+    "descrizione": "rifiuti della fabbricazione di cemento-amianto, contenenti amianto",
+    "pericoloso": true
+  },
+  "101310": {
+    "descrizione": "rifiuti della fabbricazione di cemento-amianto, diversi da quelli di cui alla voce 10 13 09",
+    "pericoloso": false
+  },
+  "101311": {
+    "descrizione": "rifiuti della produzione di materiali compositi a base di cemento, diversi da quelli di cui alle voci 10 13 09 e 10 13 10",
+    "pericoloso": false
+  },
+  "101312": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "101313": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi, diversi da quelli di cui alla voce 10 13 12",
+    "pericoloso": false
+  },
+  "101314": {
+    "descrizione": "rifiuti e fanghi di cemento",
+    "pericoloso": false
+  },
+  "101399": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "101401": {
+    "descrizione": "rifiuti prodotti dalla depurazione dei fumi, contenenti mercurio",
+    "pericoloso": true
+  },
+  "110105": {
+    "descrizione": "acidi di decappaggio",
+    "pericoloso": true
+  },
+  "110106": {
+    "descrizione": "acidi non specificati altrimenti",
+    "pericoloso": true
+  },
+  "110107": {
+    "descrizione": "basi di decappaggio",
+    "pericoloso": true
+  },
+  "110108": {
+    "descrizione": "fanghi di fosfatazione",
+    "pericoloso": true
+  },
+  "110109": {
+    "descrizione": "fanghi e residui di filtrazione, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110110": {
+    "descrizione": "fanghi e residui di filtrazione, diversi da quelli di cui alla voce 11 01 09",
+    "pericoloso": false
+  },
+  "110111": {
+    "descrizione": "soluzioni acquose di risciacquo, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110112": {
+    "descrizione": "soluzioni acquose di risciacquo, diverse da quelle di cui alla voce 10 01 11",
+    "pericoloso": false
+  },
+  "110113": {
+    "descrizione": "rifiuti di sgrassaggio contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110114": {
+    "descrizione": "rifiuti di sgrassaggio diversi da quelli di cui alla voce 11 01 13",
+    "pericoloso": false
+  },
+  "110115": {
+    "descrizione": "eluati e fanghi di sistemi a membrana o sistemi a scambio ionico, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110116": {
+    "descrizione": "resine a scambio ionico saturate o esaurite",
+    "pericoloso": true
+  },
+  "110198": {
+    "descrizione": "altri rifiuti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "110202": {
+    "descrizione": "rifiuti da processi idrometallurgici dello zinco (compresi jarosite, goethite)",
+    "pericoloso": true
+  },
+  "110203": {
+    "descrizione": "rifiuti della produzione di anodi per processi elettrolitici acquosi",
+    "pericoloso": false
+  },
+  "110205": {
+    "descrizione": "rifiuti da processi idrometallurgici del rame, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110206": {
+    "descrizione": "rifiuti da processi idrometallurgici del rame, diversi da quelli della voce 11 02 05",
+    "pericoloso": false
+  },
+  "110207": {
+    "descrizione": "altri rifiuti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "110299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "110301": {
+    "descrizione": "rifiuti contenenti cianuro",
+    "pericoloso": true
+  },
+  "110302": {
+    "descrizione": "altri rifiuti",
+    "pericoloso": true
+  },
+  "110501": {
+    "descrizione": "zinco solido",
+    "pericoloso": false
+  },
+  "110502": {
+    "descrizione": "ceneri di zinco",
+    "pericoloso": false
+  },
+  "110503": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "110504": {
+    "descrizione": "fondente esaurito",
+    "pericoloso": true
+  },
+  "110599": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "120101": {
+    "descrizione": "limatura e trucioli di metalli ferrosi",
+    "pericoloso": false
+  },
+  "120102": {
+    "descrizione": "polveri e particolato di metalli ferrosi",
+    "pericoloso": false
+  },
+  "120103": {
+    "descrizione": "limatura, scaglie e polveri di metalli non ferrosi",
+    "pericoloso": false
+  },
+  "120104": {
+    "descrizione": "polveri e particolato di metalli non ferrosi",
+    "pericoloso": false
+  },
+  "120105": {
+    "descrizione": "limatura e trucioli di materiali plastici",
+    "pericoloso": false
+  },
+  "120106": {
+    "descrizione": "oli minerali per macchinari, contenenti alogeni (eccetto emulsioni e soluzioni)",
+    "pericoloso": true
+  },
+  "120107": {
+    "descrizione": "oli minerali per macchinari, non contenenti alogeni (eccetto emulsioni e soluzioni)",
+    "pericoloso": true
+  },
+  "120108": {
+    "descrizione": "emulsioni e soluzioni per macchinari, contenenti alogeni",
+    "pericoloso": true
+  },
+  "120109": {
+    "descrizione": "emulsioni e soluzioni per macchinari, non contenenti alogeni",
+    "pericoloso": true
+  },
+  "120110": {
+    "descrizione": "oli sintetici per macchinari",
+    "pericoloso": true
+  },
+  "120112": {
+    "descrizione": "cere e grassi esauriti",
+    "pericoloso": true
+  },
+  "120113": {
+    "descrizione": "rifiuti di saldatura",
+    "pericoloso": false
+  },
+  "120114": {
+    "descrizione": "fanghi di lavorazione, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "120115": {
+    "descrizione": "fanghi di lavorazione, diversi da quelli di cui alla voce 12 01 14",
+    "pericoloso": false
+  },
+  "120116": {
+    "descrizione": "residui di materiale di sabbiatura, contenente sostanze pericolose",
+    "pericoloso": true
+  },
+  "120117": {
+    "descrizione": "residui di materiale di sabbiatura, diversi da quelli di cui alla voce 12 01 16",
+    "pericoloso": false
+  },
+  "120118": {
+    "descrizione": "fanghi metallici (fanghi di rettifica, affilatura e lappatura) contenenti oli",
+    "pericoloso": true
+  },
+  "120119": {
+    "descrizione": "oli per macchinari, facilmente biodegradabili",
+    "pericoloso": true
+  },
+  "120120": {
+    "descrizione": "corpi d'utensile e materiali di rettifica esauriti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "120121": {
+    "descrizione": "corpi d'utensile e materiali di rettifica esauriti, diversi da quelli di cui alla voce 12 01 20",
+    "pericoloso": false
+  },
+  "120199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "120301": {
+    "descrizione": "soluzioni acquose di lavaggio",
+    "pericoloso": true
+  },
+  "120302": {
+    "descrizione": "rifiuti prodotti da processi di sgrassatura a vapore",
+    "pericoloso": true
+  },
+  "130101": {
+    "descrizione": "oli per circuiti idraulici contenenti PCB",
+    "pericoloso": true
+  },
+  "130104": {
+    "descrizione": "emulsioni clorurate",
+    "pericoloso": true
+  },
+  "130105": {
+    "descrizione": "emulsioni non clorurate",
+    "pericoloso": true
+  },
+  "130109": {
+    "descrizione": "oli minerali per circuiti idraulici, clorurati",
+    "pericoloso": true
+  },
+  "130110": {
+    "descrizione": "oli minerali per circuiti idraulici, non clorurati",
+    "pericoloso": true
+  },
+  "130111": {
+    "descrizione": "oli sintetici per circuiti idraulici",
+    "pericoloso": true
+  },
+  "130112": {
+    "descrizione": "oli per circuiti idraulici, facilmente biodegradabili",
+    "pericoloso": true
+  },
+  "130113": {
+    "descrizione": "altri oli per circuiti idraulici",
+    "pericoloso": true
+  },
+  "130204": {
+    "descrizione": "oli minerali per motori, ingranaggi e lubrificazione, clorurati",
+    "pericoloso": true
+  },
+  "130205": {
+    "descrizione": "oli minerali per motori, ingranaggi e lubrificazione, non clorurati",
+    "pericoloso": true
+  },
+  "130206": {
+    "descrizione": "oli sintetici per motori, ingranaggi e lubrificazione",
+    "pericoloso": true
+  },
+  "130207": {
+    "descrizione": "oli per motori, ingranaggi e lubrificazione, facilmente biodegradabili",
+    "pericoloso": true
+  },
+  "130208": {
+    "descrizione": "altri oli per motori, ingranaggi e lubrificazione",
+    "pericoloso": true
+  },
+  "130301": {
+    "descrizione": "oli isolanti e oli termovettori, contenenti PCB",
+    "pericoloso": true
+  },
+  "130306": {
+    "descrizione": "oli isolanti e termovettori minerali clorurati, diversi da quelli di cui alla voce 13 03 01",
+    "pericoloso": true
+  },
+  "130307": {
+    "descrizione": "oli isolanti e termovettori minerali non clorurati",
+    "pericoloso": true
+  },
+  "130308": {
+    "descrizione": "oli sintetici isolanti e oli termovettori",
+    "pericoloso": true
+  },
+  "130309": {
+    "descrizione": "oli isolanti e oli termovettori, facilmente biodegradabili",
+    "pericoloso": true
+  },
+  "130310": {
+    "descrizione": "altri oli isolanti e oli termovettori",
+    "pericoloso": true
+  },
+  "130401": {
+    "descrizione": "oli di sentina da navigazione interna",
+    "pericoloso": true
+  },
+  "130402": {
+    "descrizione": "oli di sentina derivanti dalle fognature dei moli",
+    "pericoloso": true
+  },
+  "130403": {
+    "descrizione": "oli di sentina da un altro tipo di navigazione",
+    "pericoloso": true
+  },
+  "130501": {
+    "descrizione": "rifiuti solidi delle camere a sabbia e di prodotti di separazione olio/acqua",
+    "pericoloso": true
+  },
+  "130502": {
+    "descrizione": "fanghi di prodotti di separazione olio/acqua",
+    "pericoloso": true
+  },
+  "130503": {
+    "descrizione": "fanghi da collettori",
+    "pericoloso": true
+  },
+  "130506": {
+    "descrizione": "oli prodotti da separatori olio/acqua",
+    "pericoloso": true
+  },
+  "130507": {
+    "descrizione": "acque oleose prodotte da separatori olio/acqua",
+    "pericoloso": true
+  },
+  "130508": {
+    "descrizione": "miscugli di rifiuti prodotti da camere a sabbia e separatori olio/acqua",
+    "pericoloso": true
+  },
+  "130701": {
+    "descrizione": "olio combustibile e carburante diesel",
+    "pericoloso": true
+  },
+  "130702": {
+    "descrizione": "Benzina",
+    "pericoloso": true
+  },
+  "130703": {
+    "descrizione": "altri carburanti (comprese le miscele)",
+    "pericoloso": true
+  },
+  "130801": {
+    "descrizione": "fanghi e emulsioni da processi di dissalazione",
+    "pericoloso": true
+  },
+  "130802": {
+    "descrizione": "altre emulsioni",
+    "pericoloso": true
+  },
+  "130899": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": true
+  },
+  "140601": {
+    "descrizione": "clorofluorocarburi, HCFC, HFC",
+    "pericoloso": true
+  },
+  "140602": {
+    "descrizione": "altri solventi e miscele di solventi alogenati",
+    "pericoloso": true
+  },
+  "140603": {
+    "descrizione": "altri solventi e miscele di solventi",
+    "pericoloso": true
+  },
+  "140604": {
+    "descrizione": "fanghi o rifiuti solidi, contenenti solventi alogenati",
+    "pericoloso": true
+  },
+  "140605": {
+    "descrizione": "fanghi o rifiuti solidi, contenenti altri solventi",
+    "pericoloso": true
+  },
+  "150101": {
+    "descrizione": "imballaggi di carta e cartone",
+    "pericoloso": false
+  },
+  "150102": {
+    "descrizione": "imballaggi di plastica",
+    "pericoloso": false
+  },
+  "150103": {
+    "descrizione": "imballaggi in legno",
+    "pericoloso": false
+  },
+  "150104": {
+    "descrizione": "imballaggi metallici",
+    "pericoloso": false
+  },
+  "150105": {
+    "descrizione": "imballaggi compositi",
+    "pericoloso": false
+  },
+  "150106": {
+    "descrizione": "imballaggi in materiali misti",
+    "pericoloso": false
+  },
+  "150107": {
+    "descrizione": "imballaggi di vetro",
+    "pericoloso": false
+  },
+  "150109": {
+    "descrizione": "imballaggi in materia tessile",
+    "pericoloso": false
+  },
+  "150110": {
+    "descrizione": "imballaggi contenenti residui di sostanze pericolose o contaminati da tali sostanze",
+    "pericoloso": true
+  },
+  "150111": {
+    "descrizione": "imballaggi metallici contenenti matrici solide porose pericolose (ad esempio amianto), compresi conteni­ tori a pressione vuoti",
+    "pericoloso": true
+  },
+  "150202": {
+    "descrizione": "assorbenti, materiali filtranti (inclusi filtri dell'olio non specificati altrimenti), stracci e indumenti protettivi, contaminati da sostanze pericolose",
+    "pericoloso": true
+  },
+  "150203": {
+    "descrizione": "assorbenti, materiali filtranti, stracci e indumenti protettivi, diversi da quelli di cui alla voce 15 02 02",
+    "pericoloso": false
+  },
+  "160103": {
+    "descrizione": "pneumatici fuori uso",
+    "pericoloso": false
+  },
+  "160104": {
+    "descrizione": "veicoli fuori uso",
+    "pericoloso": true
+  },
+  "160106": {
+    "descrizione": "veicoli fuori uso, non contenenti liquidi né altre componenti pericolose",
+    "pericoloso": false
+  },
+  "160107": {
+    "descrizione": "filtri dell'olio",
+    "pericoloso": true
+  },
+  "160108": {
+    "descrizione": "componenti contenenti mercurio",
+    "pericoloso": true
+  },
+  "160109": {
+    "descrizione": "componenti contenenti PCB",
+    "pericoloso": true
+  },
+  "160110": {
+    "descrizione": "componenti esplosivi (ad esempio «air bag»)",
+    "pericoloso": true
+  },
+  "160111": {
+    "descrizione": "pastiglie per freni, contenenti amianto",
+    "pericoloso": true
+  },
+  "160112": {
+    "descrizione": "pastiglie per freni, diverse da quelle di cui alla voce 16 01 11",
+    "pericoloso": false
+  },
+  "160113": {
+    "descrizione": "liquidi per freni",
+    "pericoloso": true
+  },
+  "160114": {
+    "descrizione": "liquidi antigelo contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "160115": {
+    "descrizione": "liquidi antigelo diversi da quelli di cui alla voce 16 01 14",
+    "pericoloso": false
+  },
+  "160116": {
+    "descrizione": "serbatoi per gas liquefatto",
+    "pericoloso": false
+  },
+  "160117": {
+    "descrizione": "metalli ferrosi",
+    "pericoloso": false
+  },
+  "160118": {
+    "descrizione": "metalli non ferrosi",
+    "pericoloso": false
+  },
+  "160119": {
+    "descrizione": "Plastica",
+    "pericoloso": false
+  },
+  "160120": {
+    "descrizione": "Vetro",
+    "pericoloso": false
+  },
+  "160121": {
+    "descrizione": "componenti pericolosi diversi da quelli di cui alle voci da 16 01 07 a 16 01 11, 16 01 13 e 16 01 14",
+    "pericoloso": true
+  },
+  "160122": {
+    "descrizione": "componenti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "160199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "160209": {
+    "descrizione": "trasformatori e condensatori contenenti PCB",
+    "pericoloso": true
+  },
+  "160210": {
+    "descrizione": "apparecchiature fuori uso contenenti PCB o da essi contaminate, diverse da quelle di cui alla voce",
+    "pericoloso": true
+  },
+  "160211": {
+    "descrizione": "apparecchiature fuori uso, contenenti clorofluorocarburi, HCFC, HFC",
+    "pericoloso": true
+  },
+  "160212": {
+    "descrizione": "apparecchiature fuori uso, contenenti amianto in fibre libere",
+    "pericoloso": true
+  },
+  "160213": {
+    "descrizione": "apparecchiature fuori uso, contenenti componenti pericolosi (1) diversi da quelli di cui alle voci da 16 02 09 a 16 02 12",
+    "pericoloso": true
+  },
+  "160214": {
+    "descrizione": "apparecchiature fuori uso, diverse da quelle di cui alle voci da 16 02 09 a 16 02 13",
+    "pericoloso": false
+  },
+  "160215": {
+    "descrizione": "componenti pericolosi rimossi da apparecchiature fuori uso",
+    "pericoloso": true
+  },
+  "160216": {
+    "descrizione": "componenti rimossi da apparecchiature fuori uso, diversi da quelli di cui alla voce 16 02 15",
+    "pericoloso": false
+  },
+  "160303": {
+    "descrizione": "rifiuti inorganici contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "160304": {
+    "descrizione": "rifiuti inorganici, diversi da quelli di cui alla voce 16 03 03",
+    "pericoloso": false
+  },
+  "160305": {
+    "descrizione": "rifiuti organici, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "160306": {
+    "descrizione": "rifiuti organici diversi da quelli di cui alla voce 16 03 05",
+    "pericoloso": false
+  },
+  "160307": {
+    "descrizione": "mercurio metallico",
+    "pericoloso": true
+  },
+  "160401": {
+    "descrizione": "munizioni di scarto",
+    "pericoloso": true
+  },
+  "160402": {
+    "descrizione": "fuochi artificiali di scarto",
+    "pericoloso": true
+  },
+  "160403": {
+    "descrizione": "altri esplosivi di scarto",
+    "pericoloso": true
+  },
+  "160504": {
+    "descrizione": "gas in contenitori a pressione (compresi gli halon), contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "160505": {
+    "descrizione": "gas in contenitori a pressione, diversi da quelli di cui alla voce 16 05 04",
+    "pericoloso": false
+  },
+  "160506": {
+    "descrizione": "sostanze chimiche di laboratorio contenenti o costituite da sostanze pericolose, comprese le miscele di sostanze chimiche di laboratorio",
+    "pericoloso": true
+  },
+  "160507": {
+    "descrizione": "sostanze chimiche inorganiche di scarto contenenti o costituite da sostanze pericolose",
+    "pericoloso": true
+  },
+  "160508": {
+    "descrizione": "sostanze chimiche organiche di scarto contenenti o costituite da sostanze pericolose",
+    "pericoloso": true
+  },
+  "160509": {
+    "descrizione": "sostanze chimiche di scarto diverse da quelle di cui alle voci 16 05 06, 16 05 07 e 16 05 08",
+    "pericoloso": false
+  },
+  "160601": {
+    "descrizione": "batterie al piombo",
+    "pericoloso": true
+  },
+  "160602": {
+    "descrizione": "batterie al nichel-cadmio",
+    "pericoloso": true
+  },
+  "160603": {
+    "descrizione": "batterie contenenti mercurio",
+    "pericoloso": true
+  },
+  "160604": {
+    "descrizione": "batterie alcaline (tranne 16 06 03)",
+    "pericoloso": false
+  },
+  "160605": {
+    "descrizione": "altre batterie e accumulatori",
+    "pericoloso": false
+  },
+  "160606": {
+    "descrizione": "elettroliti di batterie e accumulatori, oggetto di raccolta differenziata",
+    "pericoloso": true
+  },
+  "160708": {
+    "descrizione": "rifiuti contenenti oli",
+    "pericoloso": true
+  },
+  "160709": {
+    "descrizione": "rifiuti contenenti altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "160799": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "160801": {
+    "descrizione": "catalizzatori esauriti contenenti oro, argento, renio, rodio, palladio, iridio o platino (tranne 16 08 07)",
+    "pericoloso": false
+  },
+  "160802": {
+    "descrizione": "catalizzatori esauriti contenenti metalli di transizione pericolosi o composti di metalli di transizione peri­ colosi",
+    "pericoloso": true
+  },
+  "160803": {
+    "descrizione": "catalizzatori esauriti contenenti metalli di transizione o composti di metalli di transizione, non specificati altrimenti",
+    "pericoloso": false
+  },
+  "160804": {
+    "descrizione": "catalizzatori liquidi esauriti per il cracking catalitico (tranne 16 08 07)",
+    "pericoloso": false
+  },
+  "160805": {
+    "descrizione": "catalizzatori esauriti contenenti acido fosforico",
+    "pericoloso": true
+  },
+  "160806": {
+    "descrizione": "liquidi esauriti usati come catalizzatori",
+    "pericoloso": true
+  },
+  "160807": {
+    "descrizione": "catalizzatori esauriti contaminati da sostanze pericolose",
+    "pericoloso": true
+  },
+  "160901": {
+    "descrizione": "permanganati, ad esempio permanganato di potassio",
+    "pericoloso": true
+  },
+  "160902": {
+    "descrizione": "cromati, ad esempio cromato di potassio, dicromato di potassio o di sodio",
+    "pericoloso": true
+  },
+  "160903": {
+    "descrizione": "perossidi, ad esempio perossido d'idrogeno",
+    "pericoloso": true
+  },
+  "160904": {
+    "descrizione": "sostanze ossidanti non specificate altrimenti",
+    "pericoloso": true
+  },
+  "161001": {
+    "descrizione": "rifiuti liquidi acquosi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "161002": {
+    "descrizione": "rifiuti liquidi acquosi, diversi da quelli di cui alla voce 16 10 01",
+    "pericoloso": false
+  },
+  "161003": {
+    "descrizione": "concentrati acquosi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "161004": {
+    "descrizione": "concentrati acquosi, diversi da quelli di cui alla voce 16 10 03",
+    "pericoloso": false
+  },
+  "161101": {
+    "descrizione": "rivestimenti e materiali refrattari a base di carbone provenienti da processi metallurgici, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "161102": {
+    "descrizione": "rivestimenti e materiali refrattari a base di carbonio provenienti da processi metallurgici, diversi da quelli di cui alla voce 16 11 01",
+    "pericoloso": false
+  },
+  "161103": {
+    "descrizione": "altri rivestimenti e materiali refrattari provenienti da processi metallurgici, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "161104": {
+    "descrizione": "altri rivestimenti e materiali refrattari provenienti da processi metallurgici, diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "161105": {
+    "descrizione": "rivestimenti e materiali refrattari provenienti da lavorazioni non metallurgiche, contenenti sostanze perico­ lose",
+    "pericoloso": true
+  },
+  "161106": {
+    "descrizione": "rivestimenti e materiali refrattari provenienti da lavorazioni non metallurgiche, diversi da quelli di cui alla voce 16 11 05",
+    "pericoloso": false
+  },
+  "170101": {
+    "descrizione": "Cemento",
+    "pericoloso": false
+  },
+  "170102": {
+    "descrizione": "Mattoni",
+    "pericoloso": false
+  },
+  "170103": {
+    "descrizione": "mattonelle e ceramiche",
+    "pericoloso": false
+  },
+  "170106": {
+    "descrizione": "miscugli o frazioni separate di cemento, mattoni, mattonelle e ceramiche, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "170107": {
+    "descrizione": "miscugli di cemento, mattoni, mattonelle e ceramiche, diversi da quelli di cui alla voce 17 01 06",
+    "pericoloso": false
+  },
+  "170201": {
+    "descrizione": "Legno",
+    "pericoloso": false
+  },
+  "170202": {
+    "descrizione": "Vetro",
+    "pericoloso": false
+  },
+  "170203": {
+    "descrizione": "Plastica",
+    "pericoloso": false
+  },
+  "170204": {
+    "descrizione": "vetro, plastica e legno contenenti sostanze pericolose o da esse contaminati",
+    "pericoloso": true
+  },
+  "170301": {
+    "descrizione": "miscele bituminose contenenti catrame di carbone",
+    "pericoloso": true
+  },
+  "170302": {
+    "descrizione": "miscele bituminose diverse da quelle di cui alla voce 17 03 01",
+    "pericoloso": false
+  },
+  "170303": {
+    "descrizione": "catrame di carbone e prodotti contenenti catrame",
+    "pericoloso": true
+  },
+  "170401": {
+    "descrizione": "rame, bronzo, ottone",
+    "pericoloso": false
+  },
+  "170402": {
+    "descrizione": "Alluminio",
+    "pericoloso": false
+  },
+  "170403": {
+    "descrizione": "Piombo",
+    "pericoloso": false
+  },
+  "170404": {
+    "descrizione": "Zinco",
+    "pericoloso": false
+  },
+  "170405": {
+    "descrizione": "ferro e acciaio",
+    "pericoloso": false
+  },
+  "170406": {
+    "descrizione": "Stagno",
+    "pericoloso": false
+  },
+  "170407": {
+    "descrizione": "metalli misti",
+    "pericoloso": false
+  },
+  "170409": {
+    "descrizione": "rifiuti metallici contaminati da sostanze pericolose",
+    "pericoloso": true
+  },
+  "170410": {
+    "descrizione": "cavi impregnati di olio, di catrame di carbone o di altre sostanze pericolose",
+    "pericoloso": true
+  },
+  "170411": {
+    "descrizione": "cavi, diversi da quelli di cui alla voce 17 04 10",
+    "pericoloso": false
+  },
+  "170503": {
+    "descrizione": "terra e rocce, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "170504": {
+    "descrizione": "terra e rocce, diverse da quelle di cui alla voce 17 05 03",
+    "pericoloso": false
+  },
+  "170505": {
+    "descrizione": "materiale di dragaggio contenente sostanze pericolose",
+    "pericoloso": true
+  },
+  "170506": {
+    "descrizione": "materiale di dragaggio, diverso da quello di cui alla voce 17 05 05",
+    "pericoloso": false
+  },
+  "170507": {
+    "descrizione": "pietrisco per massicciate ferroviarie, contenente sostanze pericolose",
+    "pericoloso": true
+  },
+  "170508": {
+    "descrizione": "pietrisco per massicciate ferroviarie, diverso da quello di cui alla voce 17 05 07",
+    "pericoloso": false
+  },
+  "170601": {
+    "descrizione": "materiali isolanti, contenenti amianto",
+    "pericoloso": true
+  },
+  "170603": {
+    "descrizione": "altri materiali isolanti contenenti o costituiti da sostanze pericolose",
+    "pericoloso": true
+  },
+  "170604": {
+    "descrizione": "materiali isolanti, diversi da quelli di cui alle voci 17 06 01 e 17 06 03",
+    "pericoloso": false
+  },
+  "170605": {
+    "descrizione": "materiali da costruzione contenenti amianto",
+    "pericoloso": true
+  },
+  "170801": {
+    "descrizione": "materiali da costruzione a base di gesso contaminati da sostanze pericolose",
+    "pericoloso": true
+  },
+  "170802": {
+    "descrizione": "materiali da costruzione a base di gesso, diversi da quelli di cui alla voce 17 08 01",
+    "pericoloso": false
+  },
+  "170901": {
+    "descrizione": "rifiuti dell'attività di costruzione e demolizione, contenenti mercurio",
+    "pericoloso": true
+  },
+  "170902": {
+    "descrizione": "rifiuti dell'attività di costruzione e demolizione, contenenti PCB (ad esempio sigillanti contenenti PCB, pavimentazioni a base di resina contenenti PCB, elementi stagni in vetro contenenti PCB, condensatori contenenti PCB)",
+    "pericoloso": true
+  },
+  "170903": {
+    "descrizione": "altri rifiuti dell'attività di costruzione e demolizione (compresi rifiuti misti) contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "170904": {
+    "descrizione": "rifiuti misti dell'attività di costruzione e demolizione, diversi da quelli di cui alle voci 17 09 01, 17 09 02 e 17 09 03",
+    "pericoloso": false
+  },
+  "180101": {
+    "descrizione": "oggetti da taglio (eccetto 18 01 03)",
+    "pericoloso": false
+  },
+  "180102": {
+    "descrizione": "parti anatomiche ed organi incluse le sacche per il plasma e le riserve di sangue (tranne 18 01 03)",
+    "pericoloso": false
+  },
+  "180103": {
+    "descrizione": "rifiuti che devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni",
+    "pericoloso": true
+  },
+  "180104": {
+    "descrizione": "rifiuti che non devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni (es. bende, ingessature, lenzuola, indumenti monouso, assorbenti igienici)",
+    "pericoloso": false
+  },
+  "180106": {
+    "descrizione": "sostanze chimiche pericolose o contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "180107": {
+    "descrizione": "sostanze chimiche diverse da quelle di cui alla voce 18 01 06",
+    "pericoloso": false
+  },
+  "180108": {
+    "descrizione": "medicinali citotossici e citostatici",
+    "pericoloso": true
+  },
+  "180109": {
+    "descrizione": "medicinali diversi da quelli di cui alla voce 18 01 08",
+    "pericoloso": false
+  },
+  "180110": {
+    "descrizione": "rifiuti di amalgama prodotti da interventi odontoiatrici",
+    "pericoloso": true
+  },
+  "180201": {
+    "descrizione": "oggetti da taglio (eccetto 18 02 02)",
+    "pericoloso": false
+  },
+  "180202": {
+    "descrizione": "rifiuti che devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni",
+    "pericoloso": true
+  },
+  "180203": {
+    "descrizione": "rifiuti che non devono essere raccolti e smaltiti applicando precauzioni particolari per evitare infezioni",
+    "pericoloso": false
+  },
+  "180205": {
+    "descrizione": "sostanze chimiche pericolose o contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "180206": {
+    "descrizione": "sostanze chimiche diverse da quelle di cui alla voce 18 02 05",
+    "pericoloso": false
+  },
+  "180207": {
+    "descrizione": "medicinali citotossici e citostatici",
+    "pericoloso": true
+  },
+  "180208": {
+    "descrizione": "medicinali diversi da quelli di cui alla voce 18 02 07",
+    "pericoloso": false
+  },
+  "190102": {
+    "descrizione": "materiali ferrosi estratti da ceneri pesanti",
+    "pericoloso": false
+  },
+  "190105": {
+    "descrizione": "residui di filtrazione prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "190106": {
+    "descrizione": "rifiuti liquidi acquosi prodotti dal trattamento dei fumi e altri rifiuti liquidi acquosi",
+    "pericoloso": true
+  },
+  "190107": {
+    "descrizione": "rifiuti solidi prodotti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "190110": {
+    "descrizione": "carbone attivo esaurito prodotto dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "190111": {
+    "descrizione": "ceneri pesanti e scorie, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190112": {
+    "descrizione": "ceneri pesanti e scorie, diverse da quelle di cui alla voce 19 01 11",
+    "pericoloso": false
+  },
+  "190113": {
+    "descrizione": "ceneri leggere, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190114": {
+    "descrizione": "ceneri leggere, diverse da quelle di cui alla voce 19 01 13",
+    "pericoloso": false
+  },
+  "190115": {
+    "descrizione": "polveri di caldaia, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190116": {
+    "descrizione": "polveri di caldaia, diverse da quelle di cui alla voce 19 01 15",
+    "pericoloso": false
+  },
+  "190117": {
+    "descrizione": "rifiuti della pirolisi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190118": {
+    "descrizione": "rifiuti della pirolisi, diversi da quelli di cui alla voce 19 01 17",
+    "pericoloso": false
+  },
+  "190119": {
+    "descrizione": "sabbie dei reattori a letto fluidizzato",
+    "pericoloso": false
+  },
+  "190199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "190203": {
+    "descrizione": "rifiuti premiscelati composti esclusivamente da rifiuti non pericolosi",
+    "pericoloso": false
+  },
+  "190204": {
+    "descrizione": "Rifiuti premiscelati contenenti almeno un rifiuto pericoloso",
+    "pericoloso": true
+  },
+  "190205": {
+    "descrizione": "fanghi prodotti da trattamenti chimico-fisici, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190206": {
+    "descrizione": "fanghi prodotti da trattamenti chimico-fisici, diversi da quelli di cui alla voce 19 02 05",
+    "pericoloso": false
+  },
+  "190207": {
+    "descrizione": "oli e concentrati prodotti da processi di separazione",
+    "pericoloso": true
+  },
+  "190208": {
+    "descrizione": "rifiuti combustibili liquidi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190209": {
+    "descrizione": "rifiuti combustibili solidi, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190210": {
+    "descrizione": "rifiuti combustibili, diversi da quelli di cui alle voci 19 02 08 e 19 02 09",
+    "pericoloso": false
+  },
+  "190211": {
+    "descrizione": "altri rifiuti contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190299": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "190304": {
+    "descrizione": "rifiuti contrassegnati come pericolosi, parzialmente stabilizzati diversi da quelli di cui al punto 19 03 08",
+    "pericoloso": true
+  },
+  "190305": {
+    "descrizione": "rifiuti stabilizzati diversi da quelli di cui alla voce 19 03 04",
+    "pericoloso": false
+  },
+  "190306": {
+    "descrizione": "rifiuti contrassegnati come pericolosi, solidificati",
+    "pericoloso": true
+  },
+  "190307": {
+    "descrizione": "rifiuti solidificati diversi da quelli di cui alla voce 19 03 06",
+    "pericoloso": false
+  },
+  "190308": {
+    "descrizione": "mercurio parzialmente stabilizzato",
+    "pericoloso": true
+  },
+  "190401": {
+    "descrizione": "rifiuti vetrificati",
+    "pericoloso": false
+  },
+  "190402": {
+    "descrizione": "ceneri leggere ed altri rifiuti dal trattamento dei fumi",
+    "pericoloso": true
+  },
+  "190403": {
+    "descrizione": "fase solida non vetrificata",
+    "pericoloso": true
+  },
+  "190404": {
+    "descrizione": "rifiuti liquidi acquosi prodotti dalla tempra di rifiuti vetrificati",
+    "pericoloso": false
+  },
+  "190501": {
+    "descrizione": "parte di rifiuti urbani e simili non destinata al compost",
+    "pericoloso": false
+  },
+  "190502": {
+    "descrizione": "parte di rifiuti animali e vegetali non destinata al compost",
+    "pericoloso": false
+  },
+  "190503": {
+    "descrizione": "compost fuori specifica",
+    "pericoloso": false
+  },
+  "190599": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "190603": {
+    "descrizione": "liquidi prodotti dal trattamento anaerobico di rifiuti urbani",
+    "pericoloso": false
+  },
+  "190604": {
+    "descrizione": "digestato prodotto dal trattamento anaerobico di rifiuti urbani",
+    "pericoloso": false
+  },
+  "190605": {
+    "descrizione": "liquidi prodotti dal trattamento anaerobico di rifiuti di origine animale o vegetale",
+    "pericoloso": false
+  },
+  "190606": {
+    "descrizione": "digestato prodotto dal trattamento anaerobico di rifiuti di origine animale o vegetale",
+    "pericoloso": false
+  },
+  "190699": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "190702": {
+    "descrizione": "percolato di discarica, contenente sostanze pericolose",
+    "pericoloso": true
+  },
+  "190703": {
+    "descrizione": "percolato di discarica, diverso da quello di cui alla voce 19 07 02",
+    "pericoloso": false
+  },
+  "190801": {
+    "descrizione": "Residui di vagliatura",
+    "pericoloso": false
+  },
+  "190802": {
+    "descrizione": "rifiuti da dissabbiamento",
+    "pericoloso": false
+  },
+  "190805": {
+    "descrizione": "fanghi prodotti dal trattamento delle acque reflue urbane",
+    "pericoloso": false
+  },
+  "190806": {
+    "descrizione": "resine a scambio ionico saturate o esaurite",
+    "pericoloso": true
+  },
+  "190807": {
+    "descrizione": "soluzioni e fanghi di rigenerazione degli scambiatori di ioni",
+    "pericoloso": true
+  },
+  "190808": {
+    "descrizione": "rifiuti prodotti da sistemi a membrana, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190809": {
+    "descrizione": "miscele di oli e grassi prodotte dalla separazione olio/acqua, contenenti esclusivamente oli e grassi commestibili",
+    "pericoloso": false
+  },
+  "190810": {
+    "descrizione": "miscele di oli e grassi prodotte dalla separazione olio/acqua, diverse da quelle di cui alla voce 19 08 09",
+    "pericoloso": true
+  },
+  "190811": {
+    "descrizione": "fanghi prodotti dal trattamento biologico di acque reflue industriali, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "190812": {
+    "descrizione": "fanghi prodotti dal trattamento biologico di acque reflue industriali, diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "190813": {
+    "descrizione": "fanghi contenenti sostanze pericolose prodotti da altri trattamenti di acque reflue industriali",
+    "pericoloso": true
+  },
+  "190814": {
+    "descrizione": "fanghi prodotti da altri trattamenti di acque reflue industriali, diversi da quelli di cui alla voce 19 08 13",
+    "pericoloso": false
+  },
+  "190899": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "190901": {
+    "descrizione": "rifiuti solidi prodotti dai processi di filtrazione e vaglio primari",
+    "pericoloso": false
+  },
+  "190902": {
+    "descrizione": "fanghi prodotti dai processi di chiarificazione dell'acqua",
+    "pericoloso": false
+  },
+  "190903": {
+    "descrizione": "fanghi prodotti dai processi di decarbonatazione",
+    "pericoloso": false
+  },
+  "190904": {
+    "descrizione": "carbone attivo esaurito",
+    "pericoloso": false
+  },
+  "190905": {
+    "descrizione": "resine a scambio ionico saturate o esaurite",
+    "pericoloso": false
+  },
+  "190906": {
+    "descrizione": "soluzioni e fanghi di rigenerazione delle resine a scambio ionico",
+    "pericoloso": false
+  },
+  "190999": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "191001": {
+    "descrizione": "rifiuti di ferro e acciaio",
+    "pericoloso": false
+  },
+  "191002": {
+    "descrizione": "rifiuti di metalli non ferrosi",
+    "pericoloso": false
+  },
+  "191003": {
+    "descrizione": "frazioni leggere di frammentazione (fluff-light) e polveri, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191004": {
+    "descrizione": "frazioni leggere di frammentazione (fluff-light)e polveri, diverse da quelle di cui alla voce 19 10 03",
+    "pericoloso": false
+  },
+  "191005": {
+    "descrizione": "altre frazioni, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191006": {
+    "descrizione": "altre frazioni, diverse da quelle di cui alla voce 19 10 05",
+    "pericoloso": false
+  },
+  "191101": {
+    "descrizione": "filtri di argilla esauriti",
+    "pericoloso": true
+  },
+  "191102": {
+    "descrizione": "catrami acidi",
+    "pericoloso": true
+  },
+  "191103": {
+    "descrizione": "rifiuti liquidi acquosi",
+    "pericoloso": true
+  },
+  "191104": {
+    "descrizione": "rifiuti prodotti dalla purificazione di carburanti mediante basi",
+    "pericoloso": true
+  },
+  "191105": {
+    "descrizione": "fanghi prodotti dal trattamento in loco di effluenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191106": {
+    "descrizione": "fanghi prodotti dal trattamento in loco di effluenti, diversi da quelli di cui alla voce 19 11 05",
+    "pericoloso": false
+  },
+  "191107": {
+    "descrizione": "rifiuti prodotti dalla depurazione di fumi",
+    "pericoloso": true
+  },
+  "191199": {
+    "descrizione": "rifiuti non specificati altrimenti",
+    "pericoloso": false
+  },
+  "191201": {
+    "descrizione": "carta e cartone",
+    "pericoloso": false
+  },
+  "191202": {
+    "descrizione": "metalli ferrosi",
+    "pericoloso": false
+  },
+  "191203": {
+    "descrizione": "metalli non ferrosi",
+    "pericoloso": false
+  },
+  "191204": {
+    "descrizione": "plastica e gomma",
+    "pericoloso": false
+  },
+  "191205": {
+    "descrizione": "Vetro",
+    "pericoloso": false
+  },
+  "191206": {
+    "descrizione": "legno, contenente sostanze pericolose",
+    "pericoloso": true
+  },
+  "191207": {
+    "descrizione": "legno diverso da quello di cui alla voce 19 12 06",
+    "pericoloso": false
+  },
+  "191208": {
+    "descrizione": "Prodotti tessili",
+    "pericoloso": false
+  },
+  "191209": {
+    "descrizione": "minerali (ad esempio sabbia, rocce)",
+    "pericoloso": false
+  },
+  "191210": {
+    "descrizione": "rifiuti combustibili (combustibile da rifiuti)",
+    "pericoloso": false
+  },
+  "191211": {
+    "descrizione": "altri rifiuti (compresi materiali misti) prodotti dal trattamento meccanico di rifiuti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191212": {
+    "descrizione": "altri rifiuti (compresi materiali misti) prodotti dal trattamento meccanico di rifiuti, diversi da quelli di cui alla voce 19 12 11",
+    "pericoloso": false
+  },
+  "191301": {
+    "descrizione": "rifiuti solidi prodotti da operazioni di bonifica di terreni, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191302": {
+    "descrizione": "rifiuti solidi prodotti da operazioni di bonifica di terreni, diversi da quelli di cui alla voce 19 13 01",
+    "pericoloso": false
+  },
+  "191303": {
+    "descrizione": "fanghi prodotti dalle operazioni di bonifica di terreni, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191304": {
+    "descrizione": "fanghi prodotti dalle operazioni di bonifica di terreni, diversi da quelli di cui alla voce 19 13 03",
+    "pericoloso": false
+  },
+  "191305": {
+    "descrizione": "fanghi prodotti dalle operazioni di risanamento delle acque di falda, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191306": {
+    "descrizione": "fanghi prodotti dalle operazioni di risanamento delle acque di falda, diversi da quelli di cui alla voce",
+    "pericoloso": false
+  },
+  "191307": {
+    "descrizione": "rifiuti liquidi acquosi e rifiuti concentrati acquosi prodotti dalle operazioni di risanamento delle acque di falda, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "191308": {
+    "descrizione": "rifiuti liquidi acquosi e rifiuti concentrati acquosi prodotti dalle operazioni di risanamento delle acque di falda, diversi da quelli di cui alla voce 19 13 07",
+    "pericoloso": false
+  },
+  "200101": {
+    "descrizione": "carta e cartone",
+    "pericoloso": false
+  },
+  "200102": {
+    "descrizione": "Vetro",
+    "pericoloso": false
+  },
+  "200108": {
+    "descrizione": "rifiuti biodegradabili di cucine e mense",
+    "pericoloso": false
+  },
+  "200110": {
+    "descrizione": "Abbigliamento",
+    "pericoloso": false
+  },
+  "200111": {
+    "descrizione": "Prodotti tessili",
+    "pericoloso": false
+  },
+  "200113": {
+    "descrizione": "Solventi",
+    "pericoloso": true
+  },
+  "200114": {
+    "descrizione": "Acidi",
+    "pericoloso": true
+  },
+  "200115": {
+    "descrizione": "Sostanze alcaline",
+    "pericoloso": true
+  },
+  "200117": {
+    "descrizione": "Prodotti fotochimici",
+    "pericoloso": true
+  },
+  "200119": {
+    "descrizione": "Pesticidi",
+    "pericoloso": true
+  },
+  "200121": {
+    "descrizione": "tubi fluorescenti ed altri rifiuti contenenti mercurio",
+    "pericoloso": true
+  },
+  "200123": {
+    "descrizione": "apparecchiature fuori uso contenenti clorofluorocarburi",
+    "pericoloso": true
+  },
+  "200125": {
+    "descrizione": "oli e grassi commestibili",
+    "pericoloso": false
+  },
+  "200126": {
+    "descrizione": "oli e grassi diversi da quelli di cui alla voce 20 01 25",
+    "pericoloso": true
+  },
+  "200127": {
+    "descrizione": "vernici, inchiostri, adesivi e resine contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "200128": {
+    "descrizione": "vernici, inchiostri, adesivi e resine, diversi da quelli di cui alla voce 20 01 27",
+    "pericoloso": false
+  },
+  "200129": {
+    "descrizione": "detergenti, contenenti sostanze pericolose",
+    "pericoloso": true
+  },
+  "200130": {
+    "descrizione": "detergenti diversi da quelli di cui alla voce 20 01 29",
+    "pericoloso": false
+  },
+  "200131": {
+    "descrizione": "medicinali citotossici e citostatici",
+    "pericoloso": true
+  },
+  "200132": {
+    "descrizione": "medicinali diversi da quelli di cui alla voce 20 01 31",
+    "pericoloso": false
+  },
+  "200133": {
+    "descrizione": "batterie e accumulatori di cui alle voci 16 06 01, 16 06 02 e 16 06 03, nonché batterie e accumulatori non suddivisi contenenti tali batterie",
+    "pericoloso": true
+  },
+  "200134": {
+    "descrizione": "batterie e accumulatori, diversi da quelli di cui alla voce 20 01 33",
+    "pericoloso": false
+  },
+  "200135": {
+    "descrizione": "apparecchiature elettriche ed elettroniche fuori uso, diverse da quelle di cui alla voce 20 01 21 e 20 01 23, contenenti componenti pericolosi (1)",
+    "pericoloso": true
+  },
+  "200136": {
+    "descrizione": "apparecchiature elettriche ed elettroniche fuori uso, diverse da quelle di cui alle voci 20 01 21, 20 01 23 e 20 01 35",
+    "pericoloso": false
+  },
+  "200137": {
+    "descrizione": "legno contenente sostanze pericolose",
+    "pericoloso": true
+  },
+  "200138": {
+    "descrizione": "legno diverso da quello di cui alla voce 20 01 37",
+    "pericoloso": false
+  },
+  "200139": {
+    "descrizione": "Plastica",
+    "pericoloso": false
+  },
+  "200140": {
+    "descrizione": "Metalli",
+    "pericoloso": false
+  },
+  "200141": {
+    "descrizione": "rifiuti prodotti dalla pulizia di camini e ciminiere",
+    "pericoloso": false
+  },
+  "200199": {
+    "descrizione": "altre frazioni non specificate altrimenti",
+    "pericoloso": false
+  },
+  "200201": {
+    "descrizione": "rifiuti biodegradabili",
+    "pericoloso": false
+  },
+  "200202": {
+    "descrizione": "terra e roccia",
+    "pericoloso": false
+  },
+  "200203": {
+    "descrizione": "altri rifiuti non biodegradabili",
+    "pericoloso": false
+  },
+  "200301": {
+    "descrizione": "rifiuti urbani non differenziati",
+    "pericoloso": false
+  },
+  "200302": {
+    "descrizione": "rifiuti dei mercati",
+    "pericoloso": false
+  },
+  "200303": {
+    "descrizione": "residui della pulizia stradale",
+    "pericoloso": false
+  },
+  "200304": {
+    "descrizione": "fanghi delle fosse settiche",
+    "pericoloso": false
+  },
+  "200306": {
+    "descrizione": "rifiuti prodotti dalla pulizia delle acque di scarico",
+    "pericoloso": false
+  },
+  "200307": {
+    "descrizione": "rifiuti ingombranti",
+    "pericoloso": false
+  },
+  "200399": {
+    "descrizione": "rifiuti urbani non specificati altrimenti (1) Fra i componenti pericolosi di apparecchiature elettriche ed elettroniche possono rientrare gli accumulatori e le batterie di cui alle voci 16 06, contrassegnati come pericolosi; commutatori a mercurio, vetri di tubi a raggi catodici ed altri vetri radioattivi ecc.",
+    "pericoloso": false
+  }
+}
