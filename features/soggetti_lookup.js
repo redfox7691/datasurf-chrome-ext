@@ -406,7 +406,9 @@
       processData(url, data);
     });
 
-    const selettore = ['nz-card-head', '.mat-card-header', '[class*="page-header"]', '[class*="content"]', 'nz-table', 'table', 'main', 'body'].join(', ');
+    // 'body' escluso: iniettare come primo figlio di body mette la card
+    // sopra la barra fissa di Datasurf e la rende inaccessibile.
+    const selettore = ['nz-card-head', '.mat-card-header', '[class*="page-header"]', '[class*="content"]', 'nz-table', 'table', 'main'].join(', ');
     stopObserver = kernel.waitForElement(selettore, el => {
       mountWidget(el);
       scanDomRows();
