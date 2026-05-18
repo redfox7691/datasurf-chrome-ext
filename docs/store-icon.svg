@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e88e5"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sfondo quadrato arrotondato -->
+  <rect width="128" height="128" rx="22" ry="22" fill="url(#bg)"/>
+
+  <!-- Sottolineatura decorativa -->
+  <rect x="24" y="88" width="80" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+
+  <!-- Testo b0 -->
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    font-family="ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace"
+    font-size="56"
+    font-weight="700"
+    letter-spacing="-1"
+    fill="#ffffff"
+  >b0</text>
+</svg>
