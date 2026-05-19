@@ -18,7 +18,7 @@
 (function () {
   'use strict';
 
-  const VERSION = '1.6.1';
+  const VERSION = '1.6.2';
   const STORE = new Map();
   let fetchListenerId = null;
   let stopObserver = null;
@@ -165,6 +165,8 @@
       const p = f.path || '';
       const v = text(f.value);
       if (!v || KEY_SKIP.test(k)) return;
+      // geo.* contiene dati dell'ente geografico (regione.PEC, regione.SEDE…), non dell'azienda
+      if (/^geo\b/.test(p)) return;
 
       if (KEY_NAME.test(k) && v.length > 1 && !/^\d+$/.test(v)) nameCandidates.push(v);
       if (KEY_VAT.test(k) && !rec.piva) rec.piva = v;
@@ -187,8 +189,8 @@
         else addUnique(rec.fissi, d, 4);
       }
 
-      // Soglia 15 caratteri per escludere frammenti isolati (comuni, CAP, province)
-      if (KEY_ADDR.test(k) && v.length > 15) addUnique(rec.indirizzo, v, 4);
+      // Soglia 8 caratteri per escludere frammenti isolati (CAP, sigle provincia)
+      if (KEY_ADDR.test(k) && v.length > 8) addUnique(rec.indirizzo, v, 4);
     });
 
     rec.nome = chooseBestName(nameCandidates, rec);
