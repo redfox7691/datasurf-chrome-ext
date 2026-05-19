@@ -18,7 +18,7 @@
 (function () {
   'use strict';
 
-  const VERSION = '1.6.0';
+  const VERSION = '1.6.1';
   const STORE = new Map();
   let fetchListenerId = null;
   let stopObserver = null;
@@ -106,8 +106,9 @@
       const v = obj[k];
       if (v == null) return;
       const path = prefix ? `${prefix}.${k}` : k;
-      if (typeof v === 'string' || typeof v === 'number' || typeof v === 'boolean') {
-        out.push({ key: k, path, value: String(v) });
+      // I booleani non sono mai dati utili per un soggetto (es. { piva: false })
+      if (typeof v === 'string' || typeof v === 'number') {
+        out.push({ key: k, path, value: String(v), depth });
       } else if (typeof v === 'object') {
         flatten(v, path, out, depth + 1, s);
       }
@@ -172,8 +173,11 @@
       const emails = extractEmails(v);
       if (emails.length) {
         emails.forEach(e => {
-          if (KEY_PEC.test(k) || KEY_PEC.test(p) || /pec\./i.test(e) || /@pec/i.test(e)) addUnique(rec.pec, e, 4);
-          else addUnique(rec.email, e, 4);
+          const isPec = KEY_PEC.test(k) || KEY_PEC.test(p) || /pec\./i.test(e) || /@pec/i.test(e);
+          // La PEC viene raccolta solo dai campi diretti del soggetto (depth ≤ 1),
+          // non da sotto-oggetti annidati (es. ente_regionale.pec).
+          if (isPec && f.depth <= 1) addUnique(rec.pec, e, 4);
+          else if (!isPec) addUnique(rec.email, e, 4);
         });
       }
 
@@ -183,7 +187,8 @@
         else addUnique(rec.fissi, d, 4);
       }
 
-      if (KEY_ADDR.test(k) && v.length > 3) addUnique(rec.indirizzo, v, 4);
+      // Soglia 15 caratteri per escludere frammenti isolati (comuni, CAP, province)
+      if (KEY_ADDR.test(k) && v.length > 15) addUnique(rec.indirizzo, v, 4);
     });
 
     rec.nome = chooseBestName(nameCandidates, rec);
