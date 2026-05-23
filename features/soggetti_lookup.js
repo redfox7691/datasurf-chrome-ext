@@ -118,11 +118,21 @@
 
   function clickEditPrimaRiga() {
     const righe = document.querySelectorAll('table tbody tr');
+    let editBtn = null;
     for (const riga of righe) {
-      const btn = Array.from(riga.querySelectorAll('button, a'))
+      editBtn = Array.from(riga.querySelectorAll('button, a'))
         .find(el => /^edit$/i.test(el.textContent.trim()));
-      if (btn) { btn.click(); return; }
+      if (editBtn) break;
     }
+    if (!editBtn) return;
+
+    // Rimuove il filtro prima di navigare: Angular resetta il proprio stato
+    // sincronamente, così quando l'utente torna alla lista non trova il filtro attivo.
+    const btnRimuovi = Array.from(document.querySelectorAll('button'))
+      .find(b => b.offsetParent !== null && /^rimuovi filtri$/i.test(b.textContent.trim()));
+    if (btnRimuovi) btnRimuovi.click();
+
+    editBtn.click();
   }
 
 
@@ -182,7 +192,8 @@
     });
 
     const selettore = ['nz-card-head', '.mat-card-header', '[class*="page-header"]', 'nz-table', 'table'].join(', ');
-    stopObserver = kernel.waitForElement(selettore, el => mountWidget(el));
+    // persistente: true → re-inietta il widget ogni volta che Angular ri-renderizza la pagina
+    stopObserver = kernel.waitForElement(selettore, el => mountWidget(el), { persistente: true });
   }
 
   function unmount() {
