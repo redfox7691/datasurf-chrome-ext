@@ -67,8 +67,10 @@
   }
 
   function trovaBtnFiltra() {
-    return Array.from(document.querySelectorAll('button'))
-      .find(b => b.textContent.trim() === 'Filtra' && b.offsetParent !== null);
+    // Il bottone che apre il drawer sta dentro .ant-badge nella toolbar
+    return document.querySelector('.ant-badge button')
+        || Array.from(document.querySelectorAll('button'))
+             .find(b => b.textContent.trim() === 'Filtra' && b.offsetParent !== null);
   }
 
   function trovaInputFiltro() {
@@ -90,11 +92,11 @@
   }
 
   function trovaBtnCercaFiltro() {
-    const drawer = document.querySelector('nz-drawer, .ant-drawer-body, .ant-drawer-content-wrapper');
-    if (!drawer) return null;
-    return Array.from(drawer.querySelectorAll('button'))
-      .find(b => /cerca|applica|search|apply|ok/i.test(b.textContent.trim()) && b.offsetParent !== null)
-      || null;
+    // I bottoni del drawer sono nel DOM globale (CDK overlay), non dentro nz-drawer.
+    // Il "Filtra" che apre il drawer sta dentro .ant-badge; quello che invia il filtro no.
+    const tutti = Array.from(document.querySelectorAll('button'))
+      .filter(b => b.offsetParent !== null && /^filtra$/i.test(b.textContent.trim()));
+    return tutti.find(b => !b.closest('.ant-badge')) || null;
   }
 
 
