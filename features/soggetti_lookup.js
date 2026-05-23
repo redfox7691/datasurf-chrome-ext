@@ -76,14 +76,17 @@
     const candidati = Array.from(document.querySelectorAll('input[type="text"], input:not([type])'))
       .filter(el => el.id !== 'dssogg-input' && el.offsetParent !== null);
 
-    // Preferenza: input dentro il drawer
+    // Prima priorità: input con placeholder del campo "Codice, ragione sociale..."
+    const perPlaceholder = candidati.find(el =>
+      /ragione|partita.*iva/i.test(el.placeholder || '')
+    );
+    if (perPlaceholder) return perPlaceholder;
+
+    // Fallback: secondo input visibile nel drawer (il primo è "ID")
     const nelDrawer = candidati.filter(el =>
       el.closest('nz-drawer, .ant-drawer-body, .ant-drawer-content-wrapper')
     );
-    if (nelDrawer.length) return nelDrawer[0];
-
-    // Fallback: input con placeholder relativo a soggetti
-    return candidati.find(el => /ragione|partita|codice|email/i.test(el.placeholder || '')) || null;
+    return nelDrawer[1] || nelDrawer[0] || null;
   }
 
   function trovaBtnCercaFiltro() {
